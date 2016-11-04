@@ -1,5 +1,6 @@
 #! /bin/bash
 
+# Add -z flag
 # Question
 echo What is your name?
 

@@ -1,5 +1,7 @@
 #! /bin/bash
 
+#if found change, read cat doc
+
 # Ask user name
 echo What is your name?
 read -r input
