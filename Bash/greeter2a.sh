@@ -5,9 +5,9 @@
 echo What is your name?
 
 # Loop until printed
-while [[ ${#printed} -eq 0 ]]; do
+while [[ -z ${printed} ]]; do
 	read -r input
-	if [[ ${#input} -eq 0 ]]; then
+	if [[ -z ${input} ]]; then
 		continue
 	else
 		echo Hello $input!

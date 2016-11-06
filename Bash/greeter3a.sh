@@ -2,7 +2,8 @@
 
 # Replace al vowels by an underscore '_' 
 
-# test extglob
+shopt -s extglob
+
 echo What is your name?
 read -r input
 echo Hello ${input//[aeoui]/_}!
