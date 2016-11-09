@@ -59,36 +59,38 @@ double *simulate(const int i_max, const int t_max, const int num_threads,
 
     int size_of = i_max / num_threads;
 
-
-    for (int i = 0; i < num_threads - 1; i++)
+    for (int t = 0; t < t_max; t++)
     {
+        for (int i = 0; i < num_threads - 1; i++)
+        {
+            struct data* wave_part = (struct data*)malloc(sizeof(*wave_part));
+            wave_part->i_min = i * size_of + 1;
+            wave_part->i_max = wave_part->i_min + size_of -1;
+            wave_part->old_array = old_array;
+            wave_part->current_array = current_array;
+            wave_part->next_array = next_array;
+            pthread_create(&thread_ids[i],
+                NULL,
+                &wave_worker,
+                wave_part);
+        }
+
         struct data* wave_part = (struct data*)malloc(sizeof(*wave_part));
-        wave_part->i_min = i * size_of + 1;
-        wave_part->i_max = wave_part->i_min + size_of -1;
+        wave_part->i_min = (num_threads - 1) * size_of + 1;
+        wave_part->i_max = wave_part->i_min + size_of - 1;
         wave_part->old_array = old_array;
         wave_part->current_array = current_array;
         wave_part->next_array = next_array;
-        pthread_create(&thread_ids[i],
-            NULL,
-            &wave_worker,
-            wave_part);
-    }
+        pthread_create(thread_ids + num_threads - 1,
+                NULL,
+                &wave_worker,
+                wave_part);
 
-    struct data* wave_part = (struct data*)malloc(sizeof(*wave_part));
-    wave_part->i_min = (num_threads - 1) * size_of + 1;
-    wave_part->i_max = wave_part->i_min + size_of - 1;
-    wave_part->old_array = old_array;
-    wave_part->current_array = current_array;
-    wave_part->next_array = next_array;
-    pthread_create(thread_ids + num_threads - 1,
-            NULL,
-            &wave_worker,
-            wave_part);
-
-    for (int i = 0; i < num_threads; i++)
-    {
-        pthread_join(thread_ids[i],
-            &results);
+        for (int i = 0; i < num_threads; i++)
+        {
+            pthread_join(thread_ids[i],
+                &results);
+        }
     }
 
     // for (int t = 0; t < t_max; t++)
