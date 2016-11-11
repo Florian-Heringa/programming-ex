@@ -20,8 +20,8 @@ where
 	myOr :: [Bool] -> Bool
 	myOr (x:xs)
 		| (xs==[False]) = False
-		| (x==True) = True
-		| (x/=True) = myOr xs
+		| (x==True)     = True
+		| (x/=True)     = myOr xs
 
 	elem' :: Eq a => a -> [a] -> Bool
 	elem' el lst = foldr (\a b -> (el == a) || b) False lst
@@ -39,4 +39,13 @@ where
 	reverse'' = foldl (\acc el -> el : acc) []
 
 	--index' :: [a] -> Int -> a
-	--index' lst ind = foldl (\) 
+	--index' lst ind = foldl indexF
+
+	isPalindrome :: Eq a => [a] -> Bool
+	isPalindrome lst = (lst == (reverse' lst))
+
+	giveMeFibs :: (Enum a, Num a) => Int -> [a]
+	giveMeFibs num = take num (fibsScanl)
+
+	fibsScanl :: (Num a) => [a]
+	fibsScanl = scanl (\acc el -> acc + el) 1 ([0] ++ fibsScanl)
