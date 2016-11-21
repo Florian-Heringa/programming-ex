@@ -23,7 +23,14 @@ sudoku(Puzzle, Solution) :-
 	Col3 = [X13, X23, X33, X43],
 	Col4 = [X14, X24, X34, X44], 
 
-	correctSolution([Row1, Row2, Row3, Row4, Col1, Col2, Col3 , Col4]),
+	Square1 = [X11, X12, X21. X22],
+	Square2 = [X13, X14, X23, X24],
+	Square3 = [X31, X32, X41, X42],
+	Square4 = [X33, X34, X43, X44],
+
+	correctSolution([Row1, Row2, Row3, Row4,
+					 Col1, Col2, Col3 , Col4,
+					 Square1, Square2, Square3, Square4]),
 
 	Solution = Puzzle.
 
