@@ -27,7 +27,7 @@ def genMissing(L):
 
 def readInts(filename):
     """
-    In => A file containing lines of integers.
+    In => A filename of a file containing lines of integers.
     Out => A list of lists. Every inner list containing one line of integers.
     """
 
@@ -36,36 +36,60 @@ def readInts(filename):
 
     with open(filename) as f:
 
+        # Read first line
         line = f.readline()
 
+        # Loop until next line is NONE
         while line:
 
-            for integer in line.split(" "):
+            lineList = [int(integer) for integer in line.split(" ")]
 
-                lineList.append(int(integer))
-
+            # Add line to database, reset lineList
             listOfInts.append(lineList)
             lineList = []
 
+            # Read next line
             line = f.readline()
 
-    print(listOfInts)
+    return listOfInts
 
+def printListOfInts(listIn):
 
+    lineStr = ""
+
+    for line in listIn:
+        for ints in line:
+
+            lineStr += "{} ".format(ints)
+
+        print(lineStr)
+        lineStr = ""
+
+## Variables
 inpList = [1,2,3,4,5,6]
 inpList2 = [1,2,4,5,6]
 inpList3 = [3,2,1,6,4,8,6]
 
 fileName = "testInt.txt"
+fileName2 = "sudoku_test.txt"
 
-
+print("\nTest sequences\n")
 checkSeq(inpList)
 checkSeq(inpList2)
 checkSeq(inpList3)
 
+print("\nTest generator\n")
 gen = genMissing(inpList3)
 
-print(next(gen))
-print(next(gen))
+for generated in gen:
+    print(generated)
 
-readInts(fileName)
+print("\nTesting the to- and from-list functions\n")
+listOfInts = readInts(fileName)
+print(listOfInts)
+printListOfInts(listOfInts)
+
+print("\nTesting with a 4x4 sudoku-like grid\n")
+sudoku_test = readInts(fileName2)
+print(sudoku_test)
+printListOfInts(sudoku_test)
