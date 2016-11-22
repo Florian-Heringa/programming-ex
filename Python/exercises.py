@@ -1,4 +1,5 @@
-
+from math import sqrt
+import random as rd
 
 def checkSeq(l):
     """
@@ -65,6 +66,20 @@ def printListOfInts(listIn):
         print(lineStr)
         lineStr = ""
 
+def makeGrid(n):
+
+    #grid = [[rd.randint(1,4) for x in range(1, n + 1)] for y in range(1, n + 1)]
+    #print("\n")
+    #print(grid)
+    #print("\n")
+    grid = readInts("simple_4_grid.txt")
+    print(grid)
+    print("\n")
+    #gridBlock = [[grid[s][j] for i in range(0, int(sqrt(n))) for j in range(int(sqrt(n)), n)] for s in range(0, n)]
+    gridBlock = [[grid[i + s][j + t] for i in range(0, int(sqrt(n))) for j in range(0, int(sqrt(n)))]
+                for s in range(0, int(sqrt(n))) for t in range(0, int(sqrt(n)))]
+    return gridBlock
+
 ## Variables
 inpList = [1,2,3,4,5,6]
 inpList2 = [1,2,4,5,6]
@@ -93,3 +108,6 @@ print("\nTesting with a 4x4 sudoku-like grid\n")
 sudoku_test = readInts(fileName2)
 print(sudoku_test)
 printListOfInts(sudoku_test)
+
+print("\nTest of grid genrator\n")
+printListOfInts(makeGrid(4))
