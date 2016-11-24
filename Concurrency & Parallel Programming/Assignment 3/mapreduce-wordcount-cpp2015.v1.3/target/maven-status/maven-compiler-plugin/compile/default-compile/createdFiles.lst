@@ -1,5 +1,10 @@
-nl/uva/cpp/WordCountTool.class
-nl/uva/cpp/WordCountReducer.class
-nl/uva/cpp/WordCountMapper$Counters.class
-nl/uva/cpp/WordCount.class
-nl/uva/cpp/WordCountMapper.class
+nl/uva/cpp/RTorReplyMapper.class
+nl/uva/cpp/TagSentiment.class
+nl/uva/cpp/TagSentimentMapper.class
+nl/uva/cpp/TagSentimentTool.class
+nl/uva/cpp/RTorReply.class
+nl/uva/cpp/TagSentimentReducer.class
+nl/uva/cpp/RTorReplyTool.class
+nl/uva/cpp/RTorReplyReducer.class
+nl/uva/cpp/TagSentimentMapper$Counters.class
+nl/uva/cpp/RTorReplyMapper$Counters.class
