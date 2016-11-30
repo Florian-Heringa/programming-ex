@@ -1,8 +1,12 @@
 /home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/TagSentimentMapper.java
 /home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/RTorReplyMapper.java
+/home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/TagCountTool.java
 /home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/TagSentimentTool.java
 /home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/RTorReplyTool.java
+/home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/TagCountMapper.java
 /home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/TagSentimentReducer.java
 /home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/RTorReplyReducer.java
+/home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/TagCountReducer.java
+/home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/TagCount.java
 /home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/RTorReply.java
 /home/florian-ubuntu/programming-ex/Concurrency & Parallel Programming/Assignment 3/mapreduce-wordcount-cpp2015.v1.3/src/main/java/nl/uva/cpp/TagSentiment.java

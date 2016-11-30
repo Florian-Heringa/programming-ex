@@ -1,0 +1,11 @@
+number of cores: 1
+measurement 1
+135
+measurement 2
+136
+measurement 3
+145
+measurement 4
+134
+measurement 5
+336

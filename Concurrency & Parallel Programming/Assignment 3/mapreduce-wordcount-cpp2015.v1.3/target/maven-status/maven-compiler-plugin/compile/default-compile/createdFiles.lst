@@ -1,10 +1,15 @@
+nl/uva/cpp/TagCount.class
+nl/uva/cpp/TagCountMapper$Counters.class
 nl/uva/cpp/RTorReplyMapper.class
 nl/uva/cpp/TagSentiment.class
+nl/uva/cpp/TagCountReducer.class
+nl/uva/cpp/TagCountTool.class
 nl/uva/cpp/TagSentimentMapper.class
 nl/uva/cpp/TagSentimentTool.class
 nl/uva/cpp/RTorReply.class
 nl/uva/cpp/TagSentimentReducer.class
 nl/uva/cpp/RTorReplyTool.class
 nl/uva/cpp/RTorReplyReducer.class
+nl/uva/cpp/TagCountMapper.class
 nl/uva/cpp/TagSentimentMapper$Counters.class
 nl/uva/cpp/RTorReplyMapper$Counters.class

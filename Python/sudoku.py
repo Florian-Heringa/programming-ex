@@ -1,4 +1,5 @@
 import sys
+from math import sqrt
 
 fileName = sys.argv[1]
 
@@ -31,6 +32,9 @@ def readInts(filename):
     return listOfInts
 
 def printGrid(grid):
+    """
+    Prints a sudoku grid to the screen in lines
+    """
 
     rowString = ""
 
@@ -43,63 +47,88 @@ def printGrid(grid):
         rowString = ""
 
 def transpose(grid):
+    """
+    Returns the transpose of an nxn matrix
+    """
 
     return [[row[i] for row in grid] for i in range(len(grid))]
 
 def findEmpty(grid):
+    """ 
+    Finds empty spots (designated by '0') in an nxn grid
+    """
 
     n = len(grid)
-    openSpots = [[i, j] for i in range(n) for j in range(n) if grid[i][j] == 0]
+    return [[i, j] for i in range(n) for j in range(n) if grid[i][j] == 0]
 
-    return openSpots
-
-
-def posNums(row, col):
+def posNums(row, col, block):
+    """
+    Finds possible numbers for entering in an empty spot in a sudoku
+    """
 
     n = len(row) + 1
     possibilities = range(1, n)
     ans = []
     for pos in possibilities:
-        if pos in row or pos in col:
+        if pos in row or pos in col or pos in block:
             continue
         else:
             ans.append(pos)
 
     return ans
 
-def findSol(grid, gridTr):
+def toBlock(grid):
+    """ 
+    In => an nxn sudoku grid
+    Out => the grid with the lines represented in blocks (or vice versa)
+    """
+
+    n = len(grid[0])
+    blocksize = int(sqrt(n))
+
+    gridBlock = [[grid[i + s][j + t] for i in range(blocksize) for j in range(blocksize)]
+                 for s in range(0, n, blocksize) for t in range(0, n, blocksize)]
+
+    return gridBlock
+
+def findSol(grid, gridTr, block):
+    """
+    Find solution to sudoku by iteratively trying all possible combinations
+    and adding the ones that are singular
+    """
 
     openSpots = findEmpty(grid)
-    x = 1
+    trialMode = False
+    trialInd = 0
+    trialSpots = []
 
     while len(openSpots) > 0:
 
         for spot in openSpots:
+            # current position in grid
             n, m = spot
             row = grid[n]
             col = gridTr[m]
-            posSol = posNums(row, col)
+            # list of possible solutions for the chosen position
+            posSol = posNums(row, col, block)
+            # If there is only one possibility, add into the grid
             if len(posSol) == 1:
                 grid[n][m] = posSol[0]
                 openSpots.remove(spot)
-                print("Spot {} filled".format(x))
-                x += 1
+                
 
 
 #########################################################
 grid = readInts(fileName)
 gridTr = transpose(grid)
+gridBlock = toBlock(grid)
 print("Welcome to sudoku solver, you entered the following grid:")
 printGrid(grid)
-
-#print("transposed")
-
-#printGrid(gridTr)
 print("\n")
 openSpots = findEmpty(grid)
 print("There are {} open spots:".format(len(openSpots)))
 print(openSpots)
 
 print("\nThe solution is\n")
-findSol(grid, gridTr)
+findSol(grid, gridTr, gridBlock)
 printGrid(grid)

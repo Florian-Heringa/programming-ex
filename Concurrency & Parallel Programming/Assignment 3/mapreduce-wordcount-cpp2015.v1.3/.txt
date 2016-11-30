@@ -1,0 +1,20 @@
+number of cores: 1
+time
+
+number of cores: 2
+time
+
+number of cores: 4
+time
+
+number of cores: 8
+time
+
+number of cores: 1
+
+
+number of cores: 1
+
+number of cores: 1
+Output directory hdfs://hathi-surfsara/user/cpp1633/1 already exists
+

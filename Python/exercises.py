@@ -1,5 +1,6 @@
 from math import sqrt
 import random as rd
+import itertools
 
 def checkSeq(l):
     """
@@ -55,6 +56,10 @@ def readInts(filename):
     return listOfInts
 
 def printListOfInts(listIn):
+    """ 
+    In => an nxn sudoku grid
+    Out => prints the grid line by line to the screen
+    """
 
     lineStr = ""
 
@@ -66,19 +71,24 @@ def printListOfInts(listIn):
         print(lineStr)
         lineStr = ""
 
-def makeGrid(n):
+def toBlock(grid):
+    """ 
+    In => an nxn sudoku grid
+    Out => the grid with the lines represented in blocks (or vice versa)
+    """
 
-    #grid = [[rd.randint(1,4) for x in range(1, n + 1)] for y in range(1, n + 1)]
-    #print("\n")
-    #print(grid)
-    #print("\n")
-    grid = readInts("simple_4_grid.txt")
-    print(grid)
-    print("\n")
-    #gridBlock = [[grid[s][j] for i in range(0, int(sqrt(n))) for j in range(int(sqrt(n)), n)] for s in range(0, n)]
-    gridBlock = [[grid[i + s][j + t] for i in range(0, int(sqrt(n))) for j in range(0, int(sqrt(n)))]
-                for s in range(0, int(sqrt(n))) for t in range(0, int(sqrt(n)))]
+    n = len(grid[0])
+    blocksize = int(sqrt(n))
+
+    gridBlock = [[grid[i + s][j + t] for i in range(blocksize) for j in range(blocksize)]
+                 for s in range(0, n, blocksize) for t in range(0, n, blocksize)]
+
     return gridBlock
+
+def blockIndex(iRow, iCol, n):
+    # was not capable of implementing.
+    return
+
 
 ## Variables
 inpList = [1,2,3,4,5,6]
@@ -87,6 +97,11 @@ inpList3 = [3,2,1,6,4,8,6]
 
 fileName = "testInt.txt"
 fileName2 = "sudoku_test.txt"
+simple4 = "simple_4_grid.txt"
+open9 = "20_open_spots_9_grid.txt"
+
+grid_simple4 = readInts(simple4)
+grid9 = readInts(open9)
 
 print("\nTest sequences\n")
 checkSeq(inpList)
@@ -109,5 +124,12 @@ sudoku_test = readInts(fileName2)
 print(sudoku_test)
 printListOfInts(sudoku_test)
 
-print("\nTest of grid genrator\n")
-printListOfInts(makeGrid(4))
+print("\nTest of grid generator\n")
+print("\tInput:")
+printListOfInts(grid_simple4)
+print("\tOutput")
+printListOfInts(toBlock(grid_simple4))
+print("\tInput:")
+printListOfInts(grid9)
+print("\tOutput")
+printListOfInts(toBlock(grid9))

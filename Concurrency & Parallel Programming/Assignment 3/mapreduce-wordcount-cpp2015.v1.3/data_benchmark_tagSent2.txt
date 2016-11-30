@@ -1,0 +1,48 @@
+number of cores: 1
+measurement 1
+109
+measurement 2
+136
+measurement 3
+151
+measurement 4
+131
+measurement 5
+144
+
+number of cores: 2
+measurement 1
+104
+measurement 2
+106
+measurement 3
+107
+measurement 4
+104
+measurement 5
+100
+
+number of cores: 4
+measurement 1
+85
+measurement 2
+87
+measurement 3
+89
+measurement 4
+87
+measurement 5
+88
+
+number of cores: 8
+measurement 1
+77
+measurement 2
+81
+measurement 3
+85
+measurement 4
+82
+measurement 5
+81
+

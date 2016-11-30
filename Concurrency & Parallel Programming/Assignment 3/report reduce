@@ -1,0 +1,70 @@
+1
+
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Rack-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=458647
+		Total time spent by all reduces in occupied slots (ms)=124432
+		Total time spent by all map tasks (ms)=65521
+		Total time spent by all reduce tasks (ms)=8888
+		Total vcore-seconds taken by all map tasks=65521
+		Total vcore-seconds taken by all reduce tasks=8888
+		Total megabyte-seconds taken by all map tasks=469654528
+		Total megabyte-seconds taken by all reduce tasks=127418368
+
+
+2
+
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=3
+		Launched reduce tasks=2
+		Other local map tasks=1
+		Rack-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=505820
+		Total time spent by all reduces in occupied slots (ms)=256298
+		Total time spent by all map tasks (ms)=72260
+		Total time spent by all reduce tasks (ms)=18307
+		Total vcore-seconds taken by all map tasks=72260
+		Total vcore-seconds taken by all reduce tasks=18307
+		Total megabyte-seconds taken by all map tasks=517959680
+		Total megabyte-seconds taken by all reduce tasks=262449152
+
+4
+
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=5
+		Launched reduce tasks=4
+		Other local map tasks=1
+		Rack-local map tasks=4
+		Total time spent by all maps in occupied slots (ms)=836276
+		Total time spent by all reduces in occupied slots (ms)=585704
+		Total time spent by all map tasks (ms)=119468
+		Total time spent by all reduce tasks (ms)=41836
+		Total vcore-seconds taken by all map tasks=119468
+		Total vcore-seconds taken by all reduce tasks=41836
+		Total megabyte-seconds taken by all map tasks=856346624
+		Total megabyte-seconds taken by all reduce tasks=599760896
+
+8
+
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=9
+		Launched reduce tasks=8
+		Other local map tasks=1
+		Rack-local map tasks=8
+		Total time spent by all maps in occupied slots (ms)=1111278
+		Total time spent by all reduces in occupied slots (ms)=1218812
+		Total time spent by all map tasks (ms)=158754
+		Total time spent by all reduce tasks (ms)=87058
+		Total vcore-seconds taken by all map tasks=158754
+		Total vcore-seconds taken by all reduce tasks=87058
+		Total megabyte-seconds taken by all map tasks=1137948672
+		Total megabyte-seconds taken by all reduce tasks=1248063488
+	Map-Reduce Framework
+
+
+
