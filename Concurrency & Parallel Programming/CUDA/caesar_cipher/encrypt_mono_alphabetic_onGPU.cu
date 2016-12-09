@@ -1,3 +1,4 @@
+/* Niek Kabel (11031174) and Florian Heringa. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -8,13 +9,9 @@
 using namespace std;
 
 /* Utility function, use to do error checking.
-
    Use this function like this:
-
    checkCudaCall(cudaMalloc((void **) &deviceRGB, imgS * sizeof(color_t)));
-
    And to check the result of a kernel invocation:
-
    checkCudaCall(cudaGetLastError());
 */
 static void checkCudaCall(cudaError_t result) {
@@ -25,14 +22,18 @@ static void checkCudaCall(cudaError_t result) {
 }
 
 
-__global__ void encryptKernel(char* deviceDataIn, char* deviceDataOut) {
+__global__ void encryptKernel(char* deviceDataIn, char* deviceDataOut, int n, int key) {
     unsigned index = blockIdx.x * blockDim.x + threadIdx.x;
-    deviceDataOut[index] = deviceDataIn[index];
+    if (index < n) {
+      deviceDataOut[index] = deviceDataIn[index] + key;
+    }
 }
 
-__global__ void decryptKernel(char* deviceDataIn, char* deviceDataOut) {
+__global__ void decryptKernel(char* deviceDataIn, char* deviceDataOut, int n, int key) {
     unsigned index = blockIdx.x * blockDim.x + threadIdx.x;
-    deviceDataOut[index] = deviceDataIn[index];
+    if (index < n) {
+        deviceDataOut[index] = deviceDataIn[index] - key;
+    }
 }
 
 int fileSize() {
@@ -84,13 +85,13 @@ int writeData(int size, char *fileName, char *data) {
   return -1; 
 }
 
-int EncryptSeq (int n, char* data_in, char* data_out) 
+int EncryptSeq (int n, char* data_in, char* data_out, int key) 
 {  
   int i;
   timer sequentialTime = timer("Sequential encryption");
   
   sequentialTime.start();
-  for (i=0; i<n; i++) { data_out[i]=data_in[i]; }
+  for (i=0; i<n; i++) { data_out[i]=data_in[i] + key; }
   sequentialTime.stop();
 
   cout << fixed << setprecision(6);
@@ -99,13 +100,13 @@ int EncryptSeq (int n, char* data_in, char* data_out)
   return 0; 
 }
 
-int DecryptSeq (int n, char* data_in, char* data_out)
+int DecryptSeq (int n, char* data_in, char* data_out, int key)
 {
   int i;
   timer sequentialTime = timer("Sequential decryption");
 
   sequentialTime.start();
-  for (i=0; i<n; i++) { data_out[i]=data_in[i]; }
+  for (i=0; i<n; i++) { data_out[i]=data_in[i] - key; }
   sequentialTime.stop();
 
   cout << fixed << setprecision(6);
@@ -115,10 +116,10 @@ int DecryptSeq (int n, char* data_in, char* data_out)
 }
 
 
-int EncryptCuda (int n, char* data_in, char* data_out) {
+int EncryptCuda (int n, char* data_in, char* data_out, int key) {
     int threadBlockSize = 512;
 
-    // allocate the vectors on the GPU
+    // Allocate blocks for the plaintext and ciphertext on the GPU.
     char* deviceDataIn = NULL;
     checkCudaCall(cudaMalloc((void **) &deviceDataIn, n * sizeof(char)));
     if (deviceDataIn == NULL) {
@@ -136,21 +137,22 @@ int EncryptCuda (int n, char* data_in, char* data_out) {
     timer kernelTime1 = timer("kernelTime");
     timer memoryTime = timer("memoryTime");
 
-    // copy the original vectors to the GPU
+    // Copy the plaintext to the GPU.
     memoryTime.start();
     checkCudaCall(cudaMemcpy(deviceDataIn, data_in, n*sizeof(char), cudaMemcpyHostToDevice));
     memoryTime.stop();
 
-    // execute kernel
+    // Each kernel will shift a character of the ciphertext right by
+    // key positions, for all characters.
     kernelTime1.start();
-    encryptKernel<<<n/threadBlockSize, threadBlockSize>>>(deviceDataIn, deviceDataOut);
+    encryptKernel<<<n/threadBlockSize+1, threadBlockSize>>>(deviceDataIn, deviceDataOut, n, key);
     cudaDeviceSynchronize();
     kernelTime1.stop();
 
-    // check whether the kernel invocation was successful
+    // Check whether the kernel invocation was successful.
     checkCudaCall(cudaGetLastError());
 
-    // copy result back
+    // Copy the ciphertext back.
     memoryTime.start();
     checkCudaCall(cudaMemcpy(data_out, deviceDataOut, n * sizeof(char), cudaMemcpyDeviceToHost));
     memoryTime.stop();
@@ -165,10 +167,10 @@ int EncryptCuda (int n, char* data_in, char* data_out) {
    return 0;
 }
 
-int DecryptCuda (int n, char* data_in, char* data_out) {
+int DecryptCuda (int n, char* data_in, char* data_out, int key) {
     int threadBlockSize = 512;
 
-    // allocate the vectors on the GPU
+    // Allocate blocks for the ciphertext and plaintext on the GPU.
     char* deviceDataIn = NULL;
     checkCudaCall(cudaMalloc((void **) &deviceDataIn, n * sizeof(char)));
     if (deviceDataIn == NULL) {
@@ -186,21 +188,22 @@ int DecryptCuda (int n, char* data_in, char* data_out) {
     timer kernelTime1 = timer("kernelTime");
     timer memoryTime = timer("memoryTime");
 
-    // copy the original vectors to the GPU
+    // Copy the ciphertext to the GPU.
     memoryTime.start();
     checkCudaCall(cudaMemcpy(deviceDataIn, data_in, n*sizeof(char), cudaMemcpyHostToDevice));
     memoryTime.stop();
 
-    // execute kernel
+    // Each kernel will shift a character of the ciphertext left by
+    // key positions, for all characters.
     kernelTime1.start();
-    decryptKernel<<<n/threadBlockSize, threadBlockSize>>>(deviceDataIn, deviceDataOut);
+    decryptKernel<<<n/threadBlockSize+1, threadBlockSize>>>(deviceDataIn, deviceDataOut, n, key);
     cudaDeviceSynchronize();
     kernelTime1.stop();
 
-    // check whether the kernel invocation was successful
+    // Check whether the kernel invocation was successful.
     checkCudaCall(cudaGetLastError());
 
-    // copy result back
+    // Copy the plaintext back.
     memoryTime.start();
     checkCudaCall(cudaMemcpy(data_out, deviceDataOut, n * sizeof(char), cudaMemcpyDeviceToHost));
     memoryTime.stop();
@@ -216,31 +219,47 @@ int DecryptCuda (int n, char* data_in, char* data_out) {
 }
 
 int main(int argc, char* argv[]) {
-    int n;
+    int n, key;
+
+    if (argc < 2) {
+      cout << "Usage: " << argv[0] << " key" << endl;
+      exit(0);
+    }
+    key = atoi(argv[1]);
 
     n = fileSize();
     if (n == -1) {
-	cout << "File not found! Exiting ... " << endl; 
-	exit(0);
+      cout << "File not found! Exiting ... " << endl;
+      exit(0);
     }
 
     char* data_in = new char[n];
-    char* data_out = new char[n];    
-    readData("original.data", data_in); 
+    char* data_out = new char[n];
+    readData("original.data", data_in);
 
+    // The art of secret writing consists of stenography (hiding the message)
+    // and cryptography (hiding the meaning of a message by transpositioning
+    // and/or substituting characters (enciphering) or words (encrypting),
+    // described by the cryptographic algorithm and (a)symmetric key, both of
+    // which must be known for decrypting unless we enter the realm of code breaking).
+    // We will implement a monoalphabetic substitution cipher called Caesar's
+    // cipher but not constrained to only a-z to prevent word counting and such.
+
+    /* Encipherment. */
     cout << "Encrypting a file of " << n << " characters." << endl;
 
-    EncryptSeq(n, data_in, data_out);
+    EncryptSeq(n, data_in, data_out, key);
     writeData(n, "sequential.data", data_out);
-    EncryptCuda(n, data_in, data_out);
+    EncryptCuda(n, data_in, data_out, key);
     writeData(n, "cuda.data", data_out);  
 
     readData("cuda.data", data_in);
 
+    /* Decipherment. */
     cout << "Decrypting a file of " << n << "characters" << endl;
-    DecryptSeq(n, data_in, data_out);
+    DecryptSeq(n, data_in, data_out, key);
     writeData(n, "sequential_decrypted.data", data_out);
-    DecryptCuda(n, data_in, data_out); 
+    DecryptCuda(n, data_in, data_out, key); 
     writeData(n, "recovered.data", data_out); 
  
     delete[] data_in;
@@ -248,3 +267,5 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }
+
+

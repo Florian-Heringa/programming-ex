@@ -15,7 +15,7 @@ curTime=$(date +"%H-%M-%S")
 mkdir "./speedupData/${1}-${curTime}"
 
 for initial_wave in "${initial_waves[@]}"; do
-	for num_threads in 1 2 4 6 8; do
+	for num_threads in 4; do
 		for i_max in 10 100 1000 10000 100000 1000000 10000000; do
 
 			# Checkup during execution
