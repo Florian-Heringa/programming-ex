@@ -1,5 +1,6 @@
 /* Handle to stack */
 struct stack;
+typedef struct stack Stack;
 
 /* Return a pointer to a stack data structure.
  * Size of stack is fixed. */

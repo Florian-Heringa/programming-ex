@@ -12,8 +12,8 @@ struct stack {
     int lastChar;
 };
 
-struct stack *stack_init() {
-    struct stack* s = malloc(sizeof(struct stack));
+Stack *stack_init() {
+    Stack* s = malloc(sizeof(struct stack));
 
     if (s == NULL) {
       return NULL;
@@ -29,16 +29,16 @@ struct stack *stack_init() {
     s->size = 0;
     s->lastChar = NULL;
     // ... SOME CODE MISSING HERE ...
-    printf("%d\n", s->size);
+    //printf("%d\n", s->size);
     return s;
 }
 
 int stack_push(struct stack* stack, int c) {
-    int stackSize = stack->size;
     //printf("stacksize = %d\n", stackSize);
-    stack->stack[stackSize] = c;
-    stackSize += 1;
+    stack->stack[stack->size] = c;
+    stack->size += 1;
     stack->lastChar = c;
+
     // TODO; conditional returns
     return 0;
 }
