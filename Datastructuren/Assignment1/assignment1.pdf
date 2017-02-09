@@ -1,0 +1,1395 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 8 0 R /F5 10 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /A << /S /URI /Type /Action /URI (https://en.wikipedia.org/wiki/Reverse_Polish_notation) >> /Border [ 0 0 0 ] /Rect [ 281.3629 500.0236 382.5129 512.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+6 0 obj
+<< /Border [ 0 0 0 ] /Contents () /Dest [ 18 0 R /XYZ 68.69291 210.9843 0 ] /Rect [ 238.2717 437.0236 242.7197 449.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+7 0 obj
+<< /Annots [ 5 0 R 6 0 R ] /Contents 29 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 28 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+8 0 obj
+<< /BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font >>
+endobj
+9 0 obj
+<< /Contents 30 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 28 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
+endobj
+10 0 obj
+<< /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font >>
+endobj
+11 0 obj
+<< /A << /S /URI /Type /Action /URI (https://www.youtube.com/watch?v=FNZ5o9S9prU) >> /Border [ 0 0 0 ] /Rect [ 255.6429 375.0236 477.1129 387.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+12 0 obj
+<< /A << /S /URI /Type /Action /URI (https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Stacks) >> /Border [ 0 0 0 ] /Rect [ 76.1528 345.0236 539.1228 357.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+13 0 obj
+<< /A << /S /URI /Type /Action /URI (https://www.youtube.com/watch?v=LQ-iW8jm6Mk) >> /Border [ 0 0 0 ] /Rect [ 222.9729 327.0236 443.3129 339.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+14 0 obj
+<< /A << /S /URI /Type /Action /URI (https://rosettacode.org/wiki/Parsing/Shunting-yard_algorithm) >> /Border [ 0 0 0 ] /Rect [ 202.6929 309.0236 470.0229 321.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+15 0 obj
+<< /A << /S /URI /Type /Action /URI (https://en.wikipedia.org/wiki/Shunting-yard_algorithm) >> /Border [ 0 0 0 ] /Rect [ 284.3329 291.0236 517.7529 303.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+16 0 obj
+<< /Border [ 0 0 0 ] /Contents () /Dest [ 7 0 R /XYZ 237.7529 451.0236 0 ] /Rect [ 68.69291 196.9843 74.25291 208.9843 ] /Subtype /Link /Type /Annot >>
+endobj
+17 0 obj
+<< /A << /S /URI /Type /Action /URI (http://lmgtfy.com/?q=how+to+make+a+tarball) >> /Border [ 0 0 0 ] /Rect [ 153.7323 197.7343 354.1123 209.7343 ] /Subtype /Link /Type /Annot >>
+endobj
+18 0 obj
+<< /Annots [ 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R ] /Contents 31 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 28 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+19 0 obj
+<< /Outlines 21 0 R /PageLabels 32 0 R /PageMode /UseNone /Pages 28 0 R /Type /Catalog >>
+endobj
+20 0 obj
+<< /Author () /CreationDate (D:20170206150110-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20170206150110-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Assignment 1: Reverse-Polish Notation) /Trapped /False >>
+endobj
+21 0 obj
+<< /Count 6 /First 22 0 R /Last 27 0 R /Type /Outlines >>
+endobj
+22 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 689.0236 0 ] /Next 23 0 R /Parent 21 0 R /Title (Objectives) >>
+endobj
+23 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 626.0236 0 ] /Next 24 0 R /Parent 21 0 R /Prev 22 0 R /Title (Requirements) >>
+endobj
+24 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 413.0236 0 ] /Next 25 0 R /Parent 21 0 R /Prev 23 0 R /Title (Details on the input and output formats) >>
+endobj
+25 0 obj
+<< /Dest [ 9 0 R /XYZ 62.69291 607.8236 0 ] /Next 26 0 R /Parent 21 0 R /Prev 24 0 R /Title (Getting started) >>
+endobj
+26 0 obj
+<< /Dest [ 9 0 R /XYZ 62.69291 335.8236 0 ] /Next 27 0 R /Parent 21 0 R /Prev 25 0 R /Title (Grading) >>
+endobj
+27 0 obj
+<< /Dest [ 18 0 R /XYZ 62.69291 423.0236 0 ] /Parent 21 0 R /Prev 26 0 R /Title (See also) >>
+endobj
+28 0 obj
+<< /Count 3 /Kids [ 7 0 R 9 0 R 18 0 R ] /Type /Pages >>
+endobj
+29 0 obj
+<< /Length 8029 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 47.68488 0 Td (Assignment 1: Reverse-Polish Notation) Tj T* -47.68488 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 716.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (February 1st 2017) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 701.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 28.02937 0 Td (Deadline:) Tj T* -28.02937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (February 15th 2017 23:59 \(anywhere on earth\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 668.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Objectives) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 638.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .127318 Tw (You must implement a stack API and a conversion program that converts between two notational systems) Tj T* 0 Tw (for mathematical expressions.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 605.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Requirements) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 551.0236 cm
+q
+BT 1 0 0 1 0 38 Tm 1.742651 Tw 12 TL /F1 10 Tf 0 0 0 rg (You should implement the stack API described in the ) Tj /F3 10 Tf 0 0 0 rg (stack.h ) Tj /F1 10 Tf 0 0 0 rg (file. This datastructure has not been) Tj T* 0 Tw .566303 Tw (covered in the lectures yet, but it is easy enough to understand. Note that for this assignment the size of) Tj T* 0 Tw 1.40683 Tw (the stack is limited to a fixed number, which is defined in the ) Tj /F3 10 Tf 0 0 0 rg (stack.c ) Tj /F1 10 Tf 0 0 0 rg (file. If you are unfamiliar with) Tj T* 0 Tw (stacks, check out the reference links at the end of the assignment.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 521.0236 cm
+q
+BT 1 0 0 1 0 14 Tm 1.012126 Tw 12 TL /F1 10 Tf 0 0 0 rg (Your conversion program must be named ) Tj /F3 10 Tf 0 0 0 rg (infix2rpn ) Tj /F1 10 Tf 0 0 0 rg (and must accept a single expression using infix) Tj T* 0 Tw (notation on the command-line, and output the following:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 515.0236 cm
+Q
+q
+1 0 0 1 62.69291 515.0236 cm
+Q
+q
+1 0 0 1 62.69291 503.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (on the standard output, its representation in ) Tj 0 0 .501961 rg (reverse-polish notation) Tj 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 497.0236 cm
+Q
+q
+1 0 0 1 62.69291 485.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (then, on the standard error, a summary of the stack operations needed to perform the conversion.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 485.0236 cm
+Q
+q
+1 0 0 1 62.69291 455.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.416303 Tw (The program must terminate with exit code 1 if it encounters an invalid input, and exit code 0 when it) Tj T* 0 Tw (succeeds.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 425.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .064846 Tw 12 TL /F1 10 Tf 0 0 0 rg (You must submit your work as a tarball ) Tj /F1 8 Tf 0 0 .501961 rg 5 Ts (1) Tj /F1 10 Tf 0 0 0 rg 0 Ts (. Next to the source code, your archive must contain a text file file) Tj T* 0 Tw (named \223) Tj /F3 10 Tf 0 0 0 rg (AUTHORS) Tj /F1 10 Tf 0 0 0 rg (\224 containing your name and Student ID.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 392.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Details on the input and output formats) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 380.0236 cm
+Q
+q
+1 0 0 1 62.69291 380.0236 cm
+Q
+q
+1 0 0 1 62.69291 278.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 87 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 87 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Input infix expressions are formed using the following rules:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 81 cm
+Q
+q
+1 0 0 1 23 81 cm
+Q
+q
+1 0 0 1 23 69 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (a non-empty sequence of decimal digits forms an expression.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 63 cm
+Q
+q
+1 0 0 1 23 51 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (two expressions separated by a binary operator ) Tj /F3 10 Tf 0 0 0 rg (+) Tj /F1 10 Tf 0 0 0 rg ( ) Tj /F3 10 Tf 0 0 0 rg (-) Tj /F1 10 Tf 0 0 0 rg ( ) Tj /F3 10 Tf 0 0 0 rg (*) Tj /F1 10 Tf 0 0 0 rg ( ) Tj /F3 10 Tf 0 0 0 rg (/ ) Tj /F1 10 Tf 0 0 0 rg (form an expression.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 45 cm
+Q
+q
+1 0 0 1 23 33 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (one expression between parentheses ) Tj /F3 10 Tf 0 0 0 rg (\() Tj /F1 10 Tf 0 0 0 rg ( ) Tj /F3 10 Tf 0 0 0 rg (\) ) Tj /F1 10 Tf 0 0 0 rg (forms an expression.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 15 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (spacing characters are meaningless and can be ignored.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 15 cm
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Your program must support proper precedence: ) Tj /F3 10 Tf 0 0 0 rg (3*1+2 ) Tj /F1 10 Tf 0 0 0 rg (and ) Tj /F3 10 Tf 0 0 0 rg (3*\(1+2\) ) Tj /F1 10 Tf 0 0 0 rg (are different!) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 272.0236 cm
+Q
+q
+1 0 0 1 62.69291 260.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Output RPN expressions are a space-delimited sequence of operators and non-operators.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 254.0236 cm
+Q
+q
+1 0 0 1 62.69291 218.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm 3.148555 Tw 12 TL /F1 10 Tf 0 0 0 rg (On the standard error, the program must print the word ") Tj /F3 10 Tf 0 0 0 rg (stats) Tj /F1 10 Tf 0 0 0 rg (" followed by three numbers) Tj T* 0 Tw .62881 Tw (separated by spaces, in this order: - the total number of stack "push" operations; - the total number) Tj T* 0 Tw (of stack "pop" operations; - the maximum size of the stack during the conversion.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 218.0236 cm
+Q
+q
+1 0 0 1 62.69291 200.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 82.82362 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 108 re B*
+Q
+q
+BT 1 0 0 1 0 86 Tm 12 TL /F3 10 Tf 0 0 0 rg ($ ./infix2rpn "3+2") Tj T* (3 2 +) Tj T* (stats 1 1 1) Tj T*  T* (# Exit code is 0 in case of success.) Tj T* ($ ./infix2rpn "\(3+2\)/3"; echo $?) Tj T* (3 2 + 3 /) Tj T* (stats 3 3 2) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+30 0 obj
+<< /Length 8575 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 619.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 144 re B*
+Q
+q
+BT 1 0 0 1 0 122 Tm 12 TL /F3 10 Tf 0 0 0 rg (0) Tj T*  T* (# Stats go to stderr, result to stdout.) Tj T* ($ ./infix2rpn "\(3+2\)/3"  2) Tj (>) Tj (/dev/null) Tj T* (3 2 + 3 /) Tj T* ($ ./infix2rpn "\(3+2\)/3"  ) Tj (>) Tj (/dev/null) Tj T* (stats 3 3 2) Tj T*  T* (# Checking that the exit status is correct in case of error) Tj T* ($ ./infix2rpn "blabla"  ) Tj (>) Tj (/dev/null 2) Tj (>) Tj (&) Tj (1; echo $?) Tj T* (1) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 586.8236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Getting started) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 574.8236 cm
+Q
+q
+1 0 0 1 62.69291 574.8236 cm
+Q
+q
+1 0 0 1 62.69291 562.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (1.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Unpack the provided source code archive; then run ) Tj /F3 10 Tf 0 0 0 rg (make) Tj /F1 10 Tf 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 556.8236 cm
+Q
+q
+1 0 0 1 62.69291 544.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (2.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Try out the generated ) Tj /F3 10 Tf 0 0 0 rg (infix2rpn ) Tj /F1 10 Tf 0 0 0 rg (and familiarize yourself with its interface.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 538.8236 cm
+Q
+q
+1 0 0 1 62.69291 526.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (3.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Read the file ) Tj /F3 10 Tf 0 0 0 rg (stack.h ) Tj /F1 10 Tf 0 0 0 rg (and understand the interface.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 520.8236 cm
+Q
+q
+1 0 0 1 62.69291 508.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (4.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Implement the data structure in ) Tj /F3 10 Tf 0 0 0 rg (stack.c) Tj /F1 10 Tf 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 502.8236 cm
+Q
+q
+1 0 0 1 62.69291 490.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (5.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Write a bunch of valid and invalid expressions to serve as test input for your program.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 484.8236 cm
+Q
+q
+1 0 0 1 62.69291 472.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (6.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Implement the conversion algorithm in ) Tj /F3 10 Tf 0 0 0 rg (infix2rpn.c) Tj /F1 10 Tf 0 0 0 rg (. Use your tests to check your work.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 472.8236 cm
+Q
+q
+1 0 0 1 62.69291 460.8236 cm
+Q
+q
+1 0 0 1 62.69291 353.8236 cm
+.960784 .960784 .862745 rg
+n 0 107 469.8898 -107 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 81 Tm  T* ET
+q
+1 0 0 1 16 76 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.5 Tm /F4 12.5 Tf 15 TL (Hint) Tj T* ET
+Q
+Q
+q
+1 0 0 1 16 16 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL .875868 Tw (You will not need to analyze numbers and determine the value of each number on the input. \(Of) Tj T* 0 Tw .612209 Tw (course, you can do it, but it is not needed to achieve a correct solution. The simple algorithm can) Tj T* 0 Tw .189398 Tw (look at digits individually and then forget about them.\) Check you the links referenced at the end of) Tj T* 0 Tw (the assignment!) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.662745 .662745 .662745 RG
+.5 w
+n 0 107 m 469.8898 107 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 107 l S
+n 469.8898 0 m 469.8898 107 l S
+Q
+Q
+q
+1 0 0 1 62.69291 347.8236 cm
+Q
+q
+1 0 0 1 62.69291 314.8236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Grading) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 296.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Your grade starts from 0, and the following tests determine your grade:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 290.8236 cm
+Q
+q
+1 0 0 1 62.69291 290.8236 cm
+Q
+q
+1 0 0 1 62.69291 278.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (+0,5pt if you have submitted an archive in the right format with an ) Tj /F3 10 Tf 0 0 0 rg (AUTHORS ) Tj /F1 10 Tf 0 0 0 rg (file.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 272.8236 cm
+Q
+q
+1 0 0 1 62.69291 248.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .30284 Tw 12 TL /F1 10 Tf 0 0 0 rg (+0,5pt if your source code builds without errors and you have modified ) Tj /F3 10 Tf 0 0 0 rg (stack.c ) Tj /F1 10 Tf 0 0 0 rg (or ) Tj /F3 10 Tf 0 0 0 rg (infix2rpn.c) Tj T* 0 Tw /F1 10 Tf 0 0 0 rg (in any way.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 242.8236 cm
+Q
+q
+1 0 0 1 62.69291 218.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 3.275697 Tw (+1pt if your stack API processes pushes and pops properly and detects stack overflow and) Tj T* 0 Tw (underflow situations.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 212.8236 cm
+Q
+q
+1 0 0 1 62.69291 200.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (+1pt if your stack API counts operations properly \(number of pushes, pops and max. stack size\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 194.8236 cm
+Q
+q
+1 0 0 1 62.69291 170.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 3.081647 Tw (+1pt if your converter processes expressions without grouping and a single precedence level) Tj T* 0 Tw (properly.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 164.8236 cm
+Q
+q
+1 0 0 1 62.69291 152.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (+1pt if your converter processes expressions with grouping and a single precedence level properly.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 146.8236 cm
+Q
+q
+1 0 0 1 62.69291 134.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (+1pt if your converter processes expressions with multiple precedence levels properly.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 128.8236 cm
+Q
+q
+1 0 0 1 62.69291 104.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .210814 Tw (+0,5pt if your converter detects invalid characters and improperly matched parentheses properly and) Tj T* 0 Tw (reports a correct exit code.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 98.82362 cm
+Q
+q
+1 0 0 1 62.69291 86.82362 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (-1pt if ) Tj /F3 10 Tf 0 0 0 rg (valgrind ) Tj /F1 10 Tf 0 0 0 rg (reports errors while running your converter.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 80.82362 cm
+Q
+ 
+endstream
+endobj
+31 0 obj
+<< /Length 9065 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 753.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (-1pt if ) Tj /F3 10 Tf 0 0 0 rg (clang) Tj ( ) Tj (-W) Tj ( ) Tj (-Wall ) Tj /F1 10 Tf 0 0 0 rg (reports warnings when compiling your code.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 753.0236 cm
+Q
+q
+1 0 0 1 62.69291 723.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 2.365868 Tw (The following extra features will be tested to obtain higher grades, but only if you have obtained a) Tj T* 0 Tw (minimum of 5 points on the list above already:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+Q
+q
+1 0 0 1 62.69291 705.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (+1pt if your converter properly ignores spaces in the input.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 699.0236 cm
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm .235366 Tw 12 TL /F1 10 Tf 0 0 0 rg (+1pt if your converter also supports ) Tj /F5 10 Tf (left-associative ) Tj /F1 10 Tf (exponentiation at a higher precedence level than) Tj T* 0 Tw .195697 Tw (multiplication, that is, ) Tj /F3 10 Tf 0 0 0 rg (2*a^b^c ) Tj /F1 10 Tf 0 0 0 rg (is an expression and is equivalent to ) Tj /F3 10 Tf 0 0 0 rg (2*\(\(a^b\)^c\)) Tj /F1 10 Tf 0 0 0 rg (, and converts it) Tj T* 0 Tw (appropriately.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 657.0236 cm
+Q
+q
+1 0 0 1 62.69291 621.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm 1.389213 Tw 12 TL /F1 10 Tf 0 0 0 rg (+0,5pt if your converter also supports ) Tj /F5 10 Tf (postfix function application ) Tj /F1 10 Tf (at the highest precedence level,) Tj T* 0 Tw 2.775984 Tw (that is, ) Tj /F3 10 Tf 0 0 0 rg (\(x\)F ) Tj /F1 10 Tf 0 0 0 rg (is an expression \(means apply function ) Tj /F3 10 Tf 0 0 0 rg (F ) Tj /F1 10 Tf 0 0 0 rg (to ) Tj /F3 10 Tf 0 0 0 rg (\(x\)) Tj /F1 10 Tf 0 0 0 rg (, ) Tj /F3 10 Tf 0 0 0 rg (3^\(4+2\)F ) Tj /F1 10 Tf 0 0 0 rg (is equivalent to) Tj T* 0 Tw /F3 10 Tf 0 0 0 rg (3^\(\(4+2\)F\) ) Tj /F1 10 Tf 0 0 0 rg (and is converted to ") Tj /F3 10 Tf 0 0 0 rg (3) Tj ( ) Tj (4) Tj ( ) Tj (2) Tj ( ) Tj (+) Tj ( ) Tj (F) Tj ( ) Tj (^) Tj /F1 10 Tf 0 0 0 rg ("; only one-letter functions can be supported\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 615.0236 cm
+Q
+q
+1 0 0 1 62.69291 567.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 38 Tm 3.196412 Tw 12 TL /F1 10 Tf 0 0 0 rg (+1pt if your converter also supports ) Tj /F5 10 Tf (unary negation ) Tj /F1 10 Tf (in front of simple numbers and grouped) Tj T* 0 Tw 3.154651 Tw (expressions using the symbol ) Tj /F3 10 Tf 0 0 0 rg (~ ) Tj /F1 10 Tf 0 0 0 rg (\(not ") Tj /F3 10 Tf 0 0 0 rg (-) Tj /F1 10 Tf 0 0 0 rg ("!\), for example ) Tj /F3 10 Tf 0 0 0 rg (~123 ) Tj /F1 10 Tf 0 0 0 rg (or ) Tj /F3 10 Tf 0 0 0 rg (~\(3+2\)) Tj /F1 10 Tf 0 0 0 rg (. If you choose to) Tj T* 0 Tw 2.023555 Tw (implement both this feature and the previous one, ensure that function application has a higher) Tj T* 0 Tw (precedence than negation, that is, ) Tj /F3 10 Tf 0 0 0 rg (~\(3\)F ) Tj /F1 10 Tf 0 0 0 rg (is equivalent to ) Tj /F3 10 Tf 0 0 0 rg (~\(\(3\)F\)) Tj /F1 10 Tf 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 567.0236 cm
+Q
+q
+1 0 0 1 62.69291 549.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Summary of desired precedence levels:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 543.0236 cm
+Q
+q
+1 0 0 1 62.69291 435.0236 cm
+1 1 1 rg
+n 0 108 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 90 469.8898 -18 re f*
+1 1 1 rg
+n 0 72 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 54 469.8898 -18 re f*
+1 1 1 rg
+n 0 36 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 18 469.8898 -18 re f*
+.960784 .960784 .862745 rg
+n 0 108 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 93 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 61.42028 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 18.76014 0 Td (Level) Tj T* -18.76014 0 Td ET
+Q
+Q
+q
+1 0 0 1 79.42028 93 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 384.4695 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 172.5047 0 Td (Operator) Tj T* -172.5047 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.42028 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Function application) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.42028 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Negation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.42028 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Exponentiation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (4) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.42028 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Division and multiplication) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.42028 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Addition and substraction) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 90 m 469.8898 90 l S
+n 0 72 m 469.8898 72 l S
+n 0 54 m 469.8898 54 l S
+n 0 36 m 469.8898 36 l S
+n 0 18 m 469.8898 18 l S
+n 73.42028 0 m 73.42028 108 l S
+n 0 108 m 469.8898 108 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 108 l S
+n 469.8898 0 m 469.8898 108 l S
+Q
+Q
+q
+1 0 0 1 62.69291 435.0236 cm
+Q
+q
+1 0 0 1 62.69291 402.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (See also) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 390.0236 cm
+Q
+q
+1 0 0 1 62.69291 390.0236 cm
+Q
+q
+1 0 0 1 62.69291 378.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Video "What is a stack data structure" ) Tj 0 0 .501961 rg (https://www.youtube.com/watch?v=FNZ5o9S9prU) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 372.0236 cm
+Q
+q
+1 0 0 1 53.1528 348.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 91.64333 Tw 12 TL /F1 10 Tf 0 0 0 rg (Wikibook "Programming Concepts: Stacks") Tj T* 0 Tw 0 0 .501961 rg (https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Stacks) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 342.0236 cm
+Q
+q
+1 0 0 1 62.69291 330.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Infix to postfix algorithm video: ) Tj 0 0 .501961 rg (https://www.youtube.com/watch?v=LQ-iW8jm6Mk) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 324.0236 cm
+Q
+q
+1 0 0 1 62.69291 312.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Rosetta code: infix -) Tj (> rpn: ) Tj 0 0 .501961 rg (https://rosettacode.org/wiki/Parsing/Shunting-yard_algorithm) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 306.0236 cm
+Q
+q
+1 0 0 1 62.69291 294.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Dijkstra's shunting-yard algorithm explained: ) Tj 0 0 .501961 rg (https://en.wikipedia.org/wiki/Shunting-yard_algorithm) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 294.0236 cm
+Q
+q
+1 0 0 1 62.69291 237.3307 cm
+Q
+q
+1 0 0 1 62.69291 208.9843 cm
+n 0 14.17323 m 469.8898 14.17323 l S
+Q
+q
+1 0 0 1 62.69291 196.9843 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 0 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 91.03937 0 cm
+q
+0 0 .501961 rg
+0 0 .501961 RG
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (http://lmgtfy.com/?q=how+to+make+a+tarball) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+32 0 obj
+<< /Nums [ 0 33 0 R 1 34 0 R 2 35 0 R ] >>
+endobj
+33 0 obj
+<< /S /D /St 1 >>
+endobj
+34 0 obj
+<< /S /D /St 2 >>
+endobj
+35 0 obj
+<< /S /D /St 3 >>
+endobj
+xref
+0 36
+0000000000 65535 f
+0000000075 00000 n
+0000000150 00000 n
+0000000260 00000 n
+0000000375 00000 n
+0000000483 00000 n
+0000000691 00000 n
+0000000862 00000 n
+0000001095 00000 n
+0000001217 00000 n
+0000001426 00000 n
+0000001545 00000 n
+0000001744 00000 n
+0000001997 00000 n
+0000002196 00000 n
+0000002412 00000 n
+0000002621 00000 n
+0000002792 00000 n
+0000002990 00000 n
+0000003261 00000 n
+0000003370 00000 n
+0000003669 00000 n
+0000003746 00000 n
+0000003860 00000 n
+0000003989 00000 n
+0000004145 00000 n
+0000004277 00000 n
+0000004401 00000 n
+0000004514 00000 n
+0000004590 00000 n
+0000012676 00000 n
+0000021308 00000 n
+0000030430 00000 n
+0000030492 00000 n
+0000030529 00000 n
+0000030566 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(yN!\225\230\2735\312\\E\276\177\245l\204M) (yN!\225\230\2735\312\\E\276\177\245l\204M)]
+ /Info 20 0 R /Root 19 0 R /Size 36 >>
+startxref
+30603
+%%EOF
