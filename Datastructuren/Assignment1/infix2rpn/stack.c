@@ -12,8 +12,12 @@ struct stack {
     int lastChar;
 };
 
-Stack *stack_init() {
-    Stack* s = malloc(sizeof(struct stack));
+int getSize(struct stack* stack) {
+    return stack->size;
+}
+
+struct stack *stack_init() {
+    struct stack *s = malloc(sizeof(struct stack));
 
     if (s == NULL) {
       return NULL;
@@ -27,7 +31,7 @@ Stack *stack_init() {
     }
 
     s->size = 0;
-    s->lastChar = NULL;
+    s->lastChar = 0;
     // ... SOME CODE MISSING HERE ...
     //printf("%d\n", s->size);
     return s;

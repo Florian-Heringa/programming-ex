@@ -8,8 +8,7 @@
 #include "stack.h"
 
 // ... SOME CODE MISSING HERE ...
-
-//typedef struct stack Stack;
+// EXTRA FUNCTIONS
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
@@ -18,7 +17,7 @@ int main(int argc, char *argv[]) {
     }
 
     char *input = argv[1];
-    Stack *s = stack_init();
+    struct stack *s = stack_init();
 
     int input_length = sizeof(input) / sizeof(char);
     //printf("%d\n\n", input_length);
@@ -32,14 +31,13 @@ int main(int argc, char *argv[]) {
 
     printf("%s\n", output);
 
-    printf("%d\n", s->size);
+    printf("%d\n", getSize(s));     //size should be 0
+    stack_push(s, 6);               //push 6 onto stack
+    printf("%d\n", getSize(s));     //size should be 1
+    printf("%d\n", stack_peek(s));  //should print 6
+    printf("%d\n", stack_pop(s));   // should print 6
+    printf("%d\n", getSize(s));     // should print 0
 
-
-    //printf("%lu", sizeof(s));
-    //int tst = s->size;
-    //int tst2 = s->size;
-    //printf("%d", tst);
-    //printf("%d", tst2);
     // ... SOME CODE MISSING HERE ...
 
     stack_cleanup(s);
