@@ -8,15 +8,18 @@
 struct stack {
     // ... SOME CODE MISSING HERE ...
     int *stack;
-    int size;
+    int top;
     int lastChar;
+    int pops;
+    int pushes;
+    int maxDepth;
 };
 
 int getSize(struct stack* stack) {
-    return stack->size;
+    return stack->top;
 }
 
-struct stack *stack_init() {
+struct stack* stack_init() {
     struct stack *s = malloc(sizeof(struct stack));
 
     if (s == NULL) {
@@ -30,33 +33,63 @@ struct stack *stack_init() {
       return NULL;
     }
 
-    s->size = 0;
+    s->top = -1;
     s->lastChar = 0;
-    // ... SOME CODE MISSING HERE ...
-    //printf("%d\n", s->size);
+    s->pops = 0;
+    s->pushes = 0;
+    s->maxDepth = 0;
+
     return s;
 }
 
 int stack_push(struct stack* stack, int c) {
-    //printf("stacksize = %d\n", stackSize);
-    stack->stack[stack->size] = c;
-    stack->size += 1;
+
+    //Overflow detection
+    if (stack->top >= 100) {
+      return 1;
+    }
+    stack->top += 1;
+    stack->stack[stack->top] = c;
     stack->lastChar = c;
+    stack->pushes += 1;
+
+    if (stack->top > stack->maxDepth) {
+      stack->maxDepth = stack->top;
+    }
 
     // TODO; conditional returns
     return 0;
 }
 
 int stack_pop(struct stack *stack) {
+
   if (stack_empty(stack)) {
     return -1;
   }
-  int c = stack->lastChar;
-  stack->size -= 1;
-  stack->lastChar = stack->stack[stack->size];
+
+  int c = stack_peek(stack);
+
+  // printf("c: %c\n", c);
+  // printf("inhoud @ top before: %c\n", stack->stack[stack->top]);
+  // printf("lastChar before: %c\n", stack->lastChar);
+  // printf("top before: %d\n", stack->top);
+
+  stack->top -= 1;
+  stack->pops += 1;
+  if (!stack_empty(stack)) {
+    stack->lastChar = stack->stack[stack->top];
+  } else {
+    stack->lastChar = 0;
+  }
+
+  //printf("inhoud @ top after: %c\n", stack->stack[stack->top]);
+  // printf("lastChar after: %c\n", stack->lastChar);
+  // printf("topafter: %d\n\n", stack->top);
+
   return c;
 }
 
+//Returns -1 if stack is empty, top character otherwise.
 int stack_peek(struct stack *stack) {
   if (stack_empty(stack)) {
     return -1;
@@ -64,15 +97,19 @@ int stack_peek(struct stack *stack) {
   return stack->lastChar;
 }
 
+//Returns 1 if stack is empty, 0 otherwise.
 int stack_empty(struct stack *stack) {
-  if (stack->size == 0) {
+  if (stack->top == -1) {
     return 1;
   }
   return 0;
 }
 
-void stack_cleanup(struct stack* s) {
-    free(s);
+//Print stats (amount of pushes, pops and max depth), and frees all memory.
+void stack_cleanup(struct stack *stack) {
+    printf("Stats %d %d %d\n", stack->pushes, stack->pops, stack->maxDepth);
+    free(stack->stack);
+    free(stack);
 }
 
 // ... SOME CODE MISSING HERE ...
