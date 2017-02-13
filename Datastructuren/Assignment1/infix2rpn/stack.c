@@ -15,11 +15,10 @@ struct stack {
     int maxDepth;
 };
 
-int getSize(struct stack* stack) {
-    return stack->top;
-}
-
+//Initialises a stack datastructure, with all relevant fields and
+//returns a pointer.
 struct stack* stack_init() {
+
     struct stack *s = malloc(sizeof(struct stack));
 
     if (s == NULL) {
@@ -42,6 +41,8 @@ struct stack* stack_init() {
     return s;
 }
 
+//Pushes a single integer onto the stack, keeps track of stack depth, value on
+//top and amount of pushes in lifetime.
 int stack_push(struct stack* stack, int c) {
 
     //Overflow detection
@@ -53,14 +54,15 @@ int stack_push(struct stack* stack, int c) {
     stack->lastChar = c;
     stack->pushes += 1;
 
-    if (stack->top > stack->maxDepth) {
-      stack->maxDepth = stack->top;
+    //Keep track of max depth, with correction for starting stack at -1
+    if (stack->top + 1 > stack->maxDepth) {
+      stack->maxDepth = stack->top + 1;
     }
-
-    // TODO; conditional returns
     return 0;
 }
 
+//Pops a value off the top of the stack and keeps track of total amount of pops,
+//current top value and depth of the stack.
 int stack_pop(struct stack *stack) {
 
   if (stack_empty(stack)) {
@@ -111,5 +113,3 @@ void stack_cleanup(struct stack *stack) {
     free(stack->stack);
     free(stack);
 }
-
-// ... SOME CODE MISSING HERE ...
