@@ -109,7 +109,7 @@ int stack_empty(struct stack *stack) {
 
 //Print stats (amount of pushes, pops and max depth), and frees all memory.
 void stack_cleanup(struct stack *stack) {
-    printf("Stats %d %d %d\n", stack->pushes, stack->pops, stack->maxDepth);
+    printf("stats %d %d %d\n", stack->pushes, stack->pops, stack->maxDepth);
     free(stack->stack);
     free(stack);
 }
