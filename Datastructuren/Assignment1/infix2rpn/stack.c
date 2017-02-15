@@ -46,7 +46,7 @@ struct stack* stack_init() {
 int stack_push(struct stack* stack, int c) {
 
     //Overflow detection
-    if (stack->top >= 100) {
+    if (stack->maxDepth > 99) {
       return 1;
     }
     stack->top += 1;
@@ -109,7 +109,7 @@ int stack_empty(struct stack *stack) {
 
 //Print stats (amount of pushes, pops and max depth), and frees all memory.
 void stack_cleanup(struct stack *stack) {
-    printf("stats %d %d %d\n", stack->pushes, stack->pops, stack->maxDepth);
+    fprintf(stderr, "stats %d %d %d\n", stack->pushes, stack->pops, stack->maxDepth);
     free(stack->stack);
     free(stack);
 }
