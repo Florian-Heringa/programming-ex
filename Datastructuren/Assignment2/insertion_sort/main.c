@@ -3,6 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <getopt.h>
+#include <ctype.h>
 
 #include "list.h"
 
@@ -38,20 +39,44 @@ int parse_options(struct config *cfg, int argc, char *argv[]);
 #define BUF_SIZE 1024
 static char buf[BUF_SIZE];
 
+int insertion_sort(struct list *l, struct node *n) {
+  return 0;
+}
+
 int main(int argc, char *argv[]) {
 
     struct config cfg;
     if (parse_options(&cfg, argc, argv) != 0)
         return 1;
 
-    // ... SOME CODE MISSING HERE ...
+    // Initialies linked list datastructure
+    struct list *sorted_list = list_init();
+    if (sorted_list == NULL) {
+      return 1;
+    }
 
     while (fgets(buf, BUF_SIZE, stdin)) {
 
-        // ... SOME CODE MISSING HERE ...
+      // Skip over non-digit input lines
+      if (!isdigit(*buf)) {
+        continue;
+      }
+
+      //Make new node for the number
+      struct node *current_node = node_init(NULL, NULL, (int)*buf);
+
+
+
+      //Exit condition for debug
+      if (*buf == 'q') {
+        break;
+      }
     }
 
     // ... SOME CODE MISSING HERE ...
+    printf("test\n");
+
+    list_cleanup(sorted_list);
 
     return 0;
 }
