@@ -19,20 +19,15 @@ struct node {
 // Initialises a list datastructure
 struct list* list_init() {
 
-  printf("Test begin lstinit1\n");
   struct list *listInit;
   listInit = malloc(sizeof(listInit));
 
   if (listInit == NULL) {
     return NULL;
   }
-  printf("Test begin lstinit2\n");
-  //listInit->root = (struct node*) NULL;
-  printf("Test begin lstinit3\n");
+  listInit->root = (struct node*) 0; // Gives error
   listInit->length = 0;
-  printf("Test begin lstinit4\n");
-  //listInit->lastElement = (struct node*) NULL;
-  printf("Test begin lstinit5\n");
+  listInit->lastElement = (struct node*) 0; // Gives error
   return listInit;
 }
 
@@ -45,8 +40,8 @@ struct node* node_init(struct node *previous,
   if (new_node == NULL) {
     return NULL;
   }
-  new_node->previous = previous;
-  new_node->next = next;
+  //new_node->previous = previous;
+  //new_node->next = next;
   new_node->data = data;
 
   return new_node;
@@ -187,9 +182,12 @@ void list_free_node(struct node* n) {
 /* Cleanup linked list data structure.
  * Return 0 if succesful, 1 otherwise. */
 int list_cleanup(struct list *l) {
-
+  printf("test_in_cleanup\n");
   struct node *to_be_removed = l->root;
+  printf("test_in_cleanup\n");
   struct node *temp;
+
+  printf("test_in_cleanup\n");
 
   while (to_be_removed != NULL) {
     temp = to_be_removed->next;

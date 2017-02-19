@@ -39,7 +39,28 @@ int parse_options(struct config *cfg, int argc, char *argv[]);
 #define BUF_SIZE 1024
 static char buf[BUF_SIZE];
 
-int insertion_sort(struct list *l, struct node *n) {
+int insertion_sort(struct list *l) {
+
+  struct node *to_sort = l->root->next;
+  struct node *compare;
+  int sorted = 0;
+  struct node *to_sort_next;
+
+  while (to_sort != NULL) {
+    compare = l->root
+    /* As long as to_sort is larger than the next node in the list, keep looking
+       if the original node is found, then place before */
+    while (to_sort->data > compare->data || !node_equals(to_sort, compare)) {
+      compare = compare->next;
+    }
+
+    // Unlink node and insert after compare (which is now larger than to_sort)
+    to_sort_next = to_sort->next;
+    list_unlink_node(l, to_sort);
+    list_insert_after(l, to_sort, compare);
+    to_sort = to_sort_next;
+
+  }
   return 0;
 }
 
@@ -59,19 +80,20 @@ int main(int argc, char *argv[]) {
 
       // Skip over non-digit input lines
       if (!isdigit(*buf)) {
+        //Exit condition for debug
+        if (*buf == 'q') {
+          break;
+        }
+        fprintf(stderr, "Non-integer input detected: -%c-\n", *buf);
         continue;
       }
 
-      //Make new node for the number
-      struct node *current_node = node_init(NULL, NULL, (int)*buf);
-
-
-
-      //Exit condition for debug
-      if (*buf == 'q') {
-        break;
-      }
+      // //Make new node for the number
+      // struct node *current_node = node_init(NULL, NULL, (int)*buf);
+      list_add_back(sorted_list, *buf);
     }
+
+    insertion_sort();
 
     // ... SOME CODE MISSING HERE ...
     printf("test\n");
