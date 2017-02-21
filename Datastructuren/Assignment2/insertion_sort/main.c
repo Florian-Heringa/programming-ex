@@ -39,32 +39,85 @@ int parse_options(struct config *cfg, int argc, char *argv[]);
 #define BUF_SIZE 1024
 static char buf[BUF_SIZE];
 
-int insertion_sort(struct list *l) {
-
-  struct node *to_sort = l->root->next;
-  struct node *compare;
-  int sorted = 0;
-  struct node *to_sort_next;
-
-  while (to_sort != NULL) {
-    compare = l->root
-    /* As long as to_sort is larger than the next node in the list, keep looking
-       if the original node is found, then place before */
-    while (to_sort->data > compare->data || !node_equals(to_sort, compare)) {
-      compare = compare->next;
-    }
-
-    // Unlink node and insert after compare (which is now larger than to_sort)
-    to_sort_next = to_sort->next;
-    list_unlink_node(l, to_sort);
-    list_insert_after(l, to_sort, compare);
-    to_sort = to_sort_next;
-
+// Checks if two nodes are equal
+int node_equals_main(struct list *l, struct node *n, struct node *m) {
+  if (list_node_data(n) == list_node_data(m) &&
+      list_next(n) == list_next(m) &&
+      list_prev(l, n) == list_prev(l, m)) {
+    return 1;
   }
   return 0;
 }
 
+//Uses the insertion sort algorithm on an unsorted list datastructure
+int insertion_sort(struct list *l) {
+
+  // Init node to sort and temporary cycle variables
+  struct node *to_sort = list_head(l);
+  struct node *compare;
+  struct node *to_sort_next;
+
+  //DEBUG variables
+  int i = 0;
+
+  printf("to_sort beginning: %d\n", list_node_data(to_sort));
+
+  while (to_sort != NULL) {
+
+    to_sort_next = list_next(to_sort);
+    list_unlink_node(l, to_sort);
+
+    compare = list_head(l);
+
+    printf("Iteration: %d, comp: %d, toSort: %d\n", i, list_node_data(compare),list_node_data(to_sort));
+
+    // while (list_node_data(to_sort) > list_node_data(compare)) {
+    //   printf("Iteration: %d, comp: %d, toSort: %d\n", i, list_node_data(compare),list_node_data(to_sort));
+    //   if (list_next(compare) == NULL) {
+    //     break;
+    //   }
+    //   compare = list_next(compare);
+    // }
+    printf("List print:\n");
+    list_print(l);
+
+    list_insert_after(l, to_sort, compare);
+    to_sort = to_sort_next;
+
+    ++i;
+  }
+  return 0;
+}
+
+void test_list() {
+
+  struct list *l = list_init();
+  list_add(l, 10);
+  list_add(l, 16);
+  list_add(l, 107);
+  list_add(l, 12);
+  list_add(l, 1);
+
+  list_print(l);
+
+  struct node *three = list_next(list_next(list_head(l)));
+  printf("%d\n", list_node_data(three));
+
+  list_unlink_node(l, three);
+
+  struct node *four = list_next(list_next(list_head(l)));
+
+  list_print(l);
+
+  list_insert_after(l, three, four);
+
+  list_print(l);
+
+}
+
 int main(int argc, char *argv[]) {
+
+  //test_list();
 
     struct config cfg;
     if (parse_options(&cfg, argc, argv) != 0)
@@ -84,19 +137,16 @@ int main(int argc, char *argv[]) {
         if (*buf == 'q') {
           break;
         }
-        fprintf(stderr, "Non-integer input detected: -%c-\n", *buf);
+        fprintf(stderr, "Non-integer input detected: -%s-\n", buf);
         continue;
       }
 
-      // //Make new node for the number
-      // struct node *current_node = node_init(NULL, NULL, (int)*buf);
-      list_add_back(sorted_list, *buf);
+      list_add(sorted_list, atoi(buf));
     }
 
-    insertion_sort();
-
-    // ... SOME CODE MISSING HERE ...
-    printf("test\n");
+    list_print(sorted_list);
+    insertion_sort(sorted_list);
+    list_print(sorted_list);
 
     list_cleanup(sorted_list);
 
