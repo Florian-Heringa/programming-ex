@@ -134,7 +134,7 @@ void list_print(struct list *l) {
   int i = 0;
 
   while (temp != NULL) {
-    printf("%d ", temp->data);
+    printf("%d\n", temp->data);
     temp = temp->next;
     ++i;
   }
@@ -168,18 +168,16 @@ struct node* list_prev(struct list* l, struct node* n) {
  * return 1 if an error unoccured during unlinking. */
 int list_unlink_node(struct list* l, struct node* n) {
 
-  // if (!is_in_list(l, n)) {
-  //   return 1;
-  // }
   struct node *n_minus_one = n->previous;
   struct node *n_plus_one = n->next;
 
   if (n_minus_one == NULL) {
     l->root = n_plus_one;
+    n_plus_one->previous = NULL;
     n->next = NULL;
   }
   else if (n_plus_one == NULL) {
-    n_minus_one = NULL;
+    n_minus_one->next = NULL;
     n->previous = NULL;
   }
   else {
@@ -188,6 +186,8 @@ int list_unlink_node(struct list* l, struct node* n) {
     n->next = NULL;
     n->previous = NULL;
   }
+
+  l->length -= 1;
 
   return 0;
 }
@@ -217,9 +217,6 @@ int list_cleanup(struct list *l) {
  * Return 0 if n was succesfully inserted, 1 otherwise.  */
 int list_insert_after(struct list* l, struct node* n, struct node* m) {
 
-  if (!is_in_list(l, m)) {
-    return 1;
-  }
   struct node *m_plus_one = m->next;
   m->next = n;
   n->previous = m;
@@ -227,6 +224,9 @@ int list_insert_after(struct list* l, struct node* n, struct node* m) {
   if (m_plus_one != NULL) {
     m_plus_one->previous = n;
   }
+
+  l->length += 1;
+
   return 0;
 }
 
@@ -234,17 +234,18 @@ int list_insert_after(struct list* l, struct node* n, struct node* m) {
  * Return 0 if n was succesfully inserted, 1 otherwise.  */
 int list_insert_before(struct list* l, struct node* n, struct node* m) {
 
-    // if (!is_in_list(l, m)) {
-    //   return 1;
-    // }
-
     struct node *m_minus_one = m->previous;
     m->previous = n;
     n->next = m;
     n->previous = m_minus_one;
     if (m_minus_one != NULL) {
       m_minus_one->next = n;
+    } else {
+      l->root = n;
     }
+
+    l->length += 1;
+
     return 0;
 }
 
