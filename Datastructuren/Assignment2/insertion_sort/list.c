@@ -25,9 +25,9 @@ struct list* list_init() {
     return NULL;
   }
 
-  listInit->root = NULL;//(struct node*) 0; // Gives error
+  listInit->root = NULL;
   listInit->length = 0;
-  listInit->lastElement = NULL; // Gives error
+  listInit->lastElement = NULL;
   return listInit;
 }
 
@@ -72,7 +72,8 @@ int list_add(struct list *l, int num) {
   return 0;
 }
 
-//Add integer to the list structure by adding a new node at the end
+/* Add item to the back of the list.
+ * Return 0 if succesful, 1 otherwise. */
 int list_add_back(struct list *l, int num) {
 
   //Base case for empty list
@@ -91,6 +92,7 @@ int list_add_back(struct list *l, int num) {
   if (new_node == NULL) {
     return 1;
   }
+  l->lastElement->next = new_node;
   l->lastElement = new_node;
   l->length += 1;
 
@@ -127,7 +129,7 @@ int is_in_list(struct list *l, struct node *n) {
   return 1;
 }
 
-// Prints all items from list structure, one per line
+/* Print list l, one number per line. */
 void list_print(struct list *l) {
 
   struct node *temp = l->root;
@@ -138,7 +140,6 @@ void list_print(struct list *l) {
     temp = temp->next;
     ++i;
   }
-  printf("\n");
 }
 
 /* Return the first node of the list or NULL is list is empty. */
@@ -146,14 +147,19 @@ struct node* list_head(struct list *l) {
   return l->root;
 }
 
+/* Return the data element of the list node. */
 int list_node_data(struct node* n) {
   return n->data;
 }
 
+/* Return a pointer to the next node in the list or NULL if
+ * 'n' is the last node in the list. */
 struct node* list_next(struct node* n) {
   return n->next;
 }
 
+/* Return a pointer to the previous node in the list l or NULL if
+ * 'n' is the first node in the list. */
 struct node* list_prev(struct list* l, struct node* n) {
 
   if (!is_in_list(l, n)) {
@@ -171,15 +177,19 @@ int list_unlink_node(struct list* l, struct node* n) {
   struct node *n_minus_one = n->previous;
   struct node *n_plus_one = n->next;
 
+  //Set root if unlinked node is first in list
   if (n_minus_one == NULL) {
     l->root = n_plus_one;
     n_plus_one->previous = NULL;
     n->next = NULL;
   }
+  // Set last item if unlinked node was last in list
   else if (n_plus_one == NULL) {
+    l->lastElement = n_minus_one;
     n_minus_one->next = NULL;
     n->previous = NULL;
   }
+  // Else node was in the middle of the list
   else {
     n_minus_one->next = n_plus_one;
     n_plus_one->previous = n_minus_one;
@@ -192,6 +202,7 @@ int list_unlink_node(struct list* l, struct node* n) {
   return 0;
 }
 
+/* Free node n. */
 void list_free_node(struct node* n) {
   free(n);
 }
@@ -221,8 +232,13 @@ int list_insert_after(struct list* l, struct node* n, struct node* m) {
   m->next = n;
   n->previous = m;
   n->next = m_plus_one;
+
+  /* If m is not the last element, just insert normally, else set new
+     last element to n. */
   if (m_plus_one != NULL) {
     m_plus_one->previous = n;
+  } else {
+    l->lastElement = n;
   }
 
   l->length += 1;
@@ -238,6 +254,8 @@ int list_insert_before(struct list* l, struct node* n, struct node* m) {
     m->previous = n;
     n->next = m;
     n->previous = m_minus_one;
+
+    // Check if inserted at head, if not insert normally
     if (m_minus_one != NULL) {
       m_minus_one->next = n;
     } else {
