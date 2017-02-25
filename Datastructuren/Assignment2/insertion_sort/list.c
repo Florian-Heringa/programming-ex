@@ -3,6 +3,13 @@
 
 #include "list.h"
 
+/* Author: Florian Heringa
+ * Student id: 10385835
+ *
+ * Implementation of a double linked list. Includes ways to get relevant
+ * variables, print the list structure and to clean it up after use.
+ */
+
 struct list {
   int length;
   struct node *root;

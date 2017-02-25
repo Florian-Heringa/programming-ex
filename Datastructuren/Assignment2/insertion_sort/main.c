@@ -7,6 +7,15 @@
 
 #include "list.h"
 
+/* Author: Florian Heringa
+ * Student id: 10385835
+ *
+ * This program reads a list from the standard input (numbers seperated by
+ * whitespace characters) and saves it into a double linked list structure.
+ * Then the list is sorted with an insertion sort algorithm and printed,
+ * one character per line, to the standard output.
+ */
+
 struct config {
     // You can ignore these options until/unless you implement the
     // bonus features.
