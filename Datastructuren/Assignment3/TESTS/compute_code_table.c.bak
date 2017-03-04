@@ -1,0 +1,94 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "huffman.h"
+
+
+int power(int base, int exp) {
+
+	int result = 1;
+
+	for (int i = 0; i < exp; ++i) {
+		result *= base;
+	}
+
+	return result;
+}
+
+int convert_total(int total, int depth) {
+
+	char *buf = malloc((depth + 1) * sizeof(char));
+	tobinstr_inv(total, depth, buf);
+
+	int temp;
+	int end = depth - 1;
+	int new_total = 0;
+
+	for (int i = 0; i < depth/2; i++) {
+    	temp     = buf[i];
+    	buf[i]   = buf[end];
+    	buf[end] = temp;
+ 
+    	end--;
+  	}
+
+  	for (int i = 0; i < depth; i++) {
+  		new_total += (buf[i] - '0') * power(2, i);
+  	}
+
+  	free(buf);
+
+  	return new_total;
+}
+
+/* Takes a pointer to an array of codes, an int num showing whether a 1 or 0 is part of the code
+ * an int called depth which is representative of the depth into the tree and an int showing the
+ * current value of the code.
+ */
+int traverse_tree(tree_t root , encoding_table_t *result,
+                   int num     , int depth,
+                   int total) {
+
+	int is_leaf = 1;
+	total = total + num * power(2, depth - 1);
+
+	if (root->left != 0) {
+		/* If there is a left node, call function recursively, depth increased by 1
+		 * and total increased by 2^depth if num was 1 */
+    	traverse_tree(root->left, result, 0, depth + 1, total);
+    	is_leaf = 0;
+    }
+    if (root->right != 0) {
+    	traverse_tree(root->right, result, 1, depth + 1, total);
+    	is_leaf = 0;
+    }
+
+    if (is_leaf) {
+    	int c = root->letter;
+    	(*result)[c].code_length = depth;
+    	(*result)[c].code_value = convert_total(total, depth);
+    }
+
+    return 0;
+}
+
+encoding_table_t* compute_code_table(tree_t root) {
+    encoding_table_t *result = calloc(sizeof(encoding_table_t), 1);
+    if (result == 0) {
+        perror("calloc");
+        exit(1);
+    }
+
+    // Call recursive funtion to walk through tree
+    traverse_tree(root, result, 0, 0, 0);
+
+    return result;
+}
+
+void free_code_table(encoding_table_t* table) {
+
+    free(table);
+}
+
+
+// TODO: Change coding with 2^i to shift coding, eliminates need for conversion function
+// more efficient.

@@ -25,7 +25,7 @@ decode: decode.o $(SOURCES:.c=.o)
 
 tarball: huffman_submit.tar.gz
 
-huffman_submit.tar.gz: $(SOURCES) $(HEADERS) AUTHORS Makefile
+huffman_submit.tar.gz: $(SOURCES) $(HEADERS) AUTHORS Makefile encode.c decode.c
 	tar -czf $@ $^
 
 check: huffman_submit.tar.gz

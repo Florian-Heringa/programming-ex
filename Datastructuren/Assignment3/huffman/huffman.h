@@ -1,3 +1,11 @@
+/* Florian Heringa
+ * 10385835
+ * 
+ * huffman.h
+ * Header file for the huffman encoding program. Defines structures and
+ * functions to be used with the algorithm.
+ */
+
 // Read all the lines from stdin into a single in-memory string.
 char *read_data(void);
 
@@ -22,7 +30,7 @@ tree_t make_tree(char letter, int value, tree_t left, tree_t right);
 tree_t fixed_tree();
 
 // Special character used to load/print trees.
-#define SPECIAL_CHAR '~'
+#define SPECIAL_CHAR '.'
 
 // Convert the representation of a tree into a tree.
 tree_t load_tree(char*);
@@ -48,7 +56,7 @@ void free_tree(tree_t tree);
 // The encoding table type.
 typedef struct {
     int code_length;
-    // ... SOME CODE MISSING HERE ...
+    int code_value;
 } code;
 
 typedef code encoding_table_t[256];
@@ -65,3 +73,5 @@ void print_code_table(encoding_table_t*);
 
 // Translate the input data using the encoding table.
 void encode_data(encoding_table_t* table, char *input_data, int *num_encoded, int *num_printed);
+
+void tobinstr_inv(int value, int bitsCount, char* output);

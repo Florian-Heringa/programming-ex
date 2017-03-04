@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include "huffman.h"
 
-int leaf(tree_t node) {
-	if (node->left != 0 && node->right != 0)
-	{
-		return 1;
-	}
-	return 0;
-}
+/* Florian Heringa
+ * 10385835
+ * 
+ * print_tree.c
+ * Uses recursion to print a binary tree structure.
+ */
 
 void recursive_print(tree_t root) {
 
@@ -28,5 +27,4 @@ void recursive_print(tree_t root) {
 void print_tree(tree_t root) {
     
     recursive_print(root);
-    printf("\n");
 }

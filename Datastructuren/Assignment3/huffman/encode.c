@@ -3,6 +3,18 @@
 
 #include "huffman.h"
 
+/* Florian Heringa
+ * 10385835
+ * 
+ * encode.c
+ * Program uses auxiliary functions, described in huffman.h, to encode an
+ * input text represented by ASCII characters with the Huffman encoding algorithm.
+ * This is done by saving the data in a binary tree structure where the depth 
+ * into the tree of a character is dependent on freqeuncy in the text. This tree 
+ * can be interpreted as a code for any one character by, depending on left or
+ * right branches, coding the character with a sequence of 0's or 1's.
+ */
+
 int main(int argc, char *argv[]) {
     char* input_data = read_data();
 
@@ -11,9 +23,8 @@ int main(int argc, char *argv[]) {
     if (argc > 1) {
         tree = load_tree(argv[1]);
     } else {
-        // Uncomment these lines for assignment 5.
-        // frequency_table_t* freqs = compute_frequencies(input_data);
-        // tree = compute_tree(freqs);
+        frequency_table_t* freqs = compute_frequencies(input_data);
+        tree = compute_tree(freqs);
     }
 
     // Until load_tree and/or compute_tree is complete, fixed_tree()
@@ -28,8 +39,6 @@ int main(int argc, char *argv[]) {
 
     // Convert the tree to a code table.
     encoding_table_t* table = compute_code_table(tree);
-
-    // print_code_table(table);
 
     int num_printed = 0;
     int num_encoded = 0;
