@@ -1,0 +1,228 @@
+#include <fcntl.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <getopt.h>
+
+#include "prioq.h"
+
+#define BUF_SIZE 1024
+
+static char buf[BUF_SIZE];
+
+struct patient {
+    char *name;
+    int age;
+    int duration;
+};
+
+// Simple comparison function of patients by age
+int cmp_by_age(const void *a, const void *b) {
+
+    int p1_age = ((struct patient*)a)->age;
+    int p2_age = ((struct patient*)b)->age;
+
+    return p1_age > p2_age ? 1 : (p1_age < p2_age ? -1: 0);
+}
+
+// Uses recursion to sort by entire name, and not by only first letter
+int cmp_by_name_rec(char* p1, char* p2, int depth) {
+
+    if (p1[depth] == '\0') {
+        return 1;
+    } else if  (p2[depth] == '\0') {
+        return -1;
+    } 
+
+    // Compare name by character
+    char lead1 = p1[depth];
+    char lead2 = p2[depth];
+
+    /* If characters are not the same, return first in alphabet,
+     * else return recursive step
+     */
+    return lead1 > lead2 ? 1 : (lead1 < lead2 ? -1: cmp_by_name_rec(p1, p2, depth + 1));
+}
+
+// Setup for recursive step
+int cmp_by_name(const void *a, const void *b) {
+
+    char *p1 = ((struct patient*)a)->name;
+    char *p2 = ((struct patient*)b)->name;
+
+    printf("Comparing: %s and %s\n", p1, p2);
+
+    return cmp_by_name_rec(p1, p2, 0);
+}
+
+struct config {
+    // Set to 1 if -y is specified, 0 otherwise.
+    int year;
+};
+
+struct patient* patient_from_input(char* input) {
+
+    struct patient *p = malloc(sizeof(struct patient));
+    char *token;
+
+    if (!p) {
+        return NULL;
+    }
+
+    // Populate fields of patient struct
+    token = strtok(input, " \n");
+    if (!token) {
+        free(p);
+        return NULL;
+    }
+    p->name = malloc(sizeof(token));
+    strcpy(p->name, token);
+
+    token = strtok(NULL, " \n");
+    if (!token) {
+        free(p->name);
+        free(p);
+        return NULL;
+    }
+    p->age = atoi(token);
+
+    token = strtok(NULL, " \n");
+    if (token) {
+        p->duration = atoi(token);
+    } else {
+        p->duration = 0;
+    }
+
+    return p;
+}
+
+void free_patient(void *p) {
+
+    free(((struct patient *)p)->name);
+    free((struct patient *)p);
+}
+
+void print_patient(struct patient *p) {
+    if (!p) {
+        return;
+    }
+    printf("%s\n", p->name);
+    free_patient(p);
+}
+
+static
+int parse_options(struct config *cfg, int argc, char *argv[]);
+
+int main(int argc, char *argv[]) {
+
+    //char *token, *name_cpy;
+    prioq *queue;
+    struct config cfg;
+    struct patient *p;
+
+    if (parse_options(&cfg, argc, argv) != 0) {
+        return EXIT_FAILURE;
+    }
+
+    if (cfg.year) {
+        queue = prioq_init(cmp_by_age);
+    } else {
+        queue = prioq_init(cmp_by_name);
+    }
+
+    for (int iterations = 0;;) {
+        while (1) {
+            char *s = fgets(buf, BUF_SIZE, stdin);
+            if (s == NULL) {
+                fprintf(stderr, "Unexpected end of file. exiting\n");
+                exit(1);
+            }
+
+            // Time is passing, no new patients for now
+            if (buf[0] == '.') {
+                break;
+            }
+
+            // Put new patient into queue with insert
+            p = patient_from_input(s);
+
+            if (!p) {
+                fprintf(stderr, "Something went wrong\n");
+                exit(1);
+            }
+            printf("Adding %s on iteration %d\n", p->name, iterations);
+            prioq_insert(queue, p);
+            
+        }
+
+
+        printf("State of the stack before removing: ");
+
+        for (int j = 1; j <= prioq_size(queue); ++j) {
+            printf("%s ", ((struct patient *)get_item(queue, j))->name);
+        }
+        printf("\nSize of queue: %d\n", prioq_size(queue));
+
+        // Remove_min on queue if there is a patient
+        p = prioq_pop(queue);
+
+        if (p->duration) {
+            for (int i = 0; i < p->duration; i++) {
+                printf(".\n");
+                ++iterations;
+            }
+        }
+
+        printf("\nRemoving: ");
+        print_patient(p);
+        printf("\ton iteration %d\n", iterations);
+        printf("State of the stack after removing: ");
+
+        for (int j = 1; j <= prioq_size(queue); ++j) {
+            printf("%s ", ((struct patient *)get_item(queue, j))->name);
+        }
+
+        printf(" \n\n"); // End turn.
+
+        // if 10 hours passed, day is over
+        if (++iterations == 10) {
+
+            printf("Done working, popping patients\n");
+
+            p = prioq_pop(queue);
+
+            // Pop off all remaining patients
+            while (p) {
+                print_patient(p);
+                p = prioq_pop(queue);
+            }
+
+            break;
+        }
+    }
+
+    prioq_cleanup(queue, free_patient);
+
+    return EXIT_SUCCESS;
+}
+
+int parse_options(struct config *cfg, int argc, char *argv[]) {
+    memset(cfg, 0, sizeof(struct config));
+    int c;
+    while ((c = getopt (argc, argv, "y")) != -1) {
+        switch (c) {
+            case 'y': cfg->year = 1; break;
+            default:
+                fprintf(stderr, "invalid option: -%c\n", optopt);
+                return 1;
+        }
+    }
+    return 0;
+}
+
+
+
+
+// TODO; find out what simple.txt has in it, fix order error of last two patients in
+// opgave_voorbeeld.txt. Implement duration of appointments
