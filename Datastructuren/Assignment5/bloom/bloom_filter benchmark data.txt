@@ -1,0 +1,20 @@
+cat ../check/opdracht5/t2.txt | ./dups 2 64 989 1679 >> ../check/opdracht5/t2_out.txt
+1000 63
+
+cat ../check/opdracht5/t2.txt | ./dups 10 3200 989 1679 1 891 7891 326781 37892 6782 345 178 >> ../check/opdracht5/t2_out.txt
+1000 689
+
+cat ../check/opdracht5/t2.txt | ./dups 6 3200 989 1679 1 891 7891 3267 >> ../check/opdracht5/t2_out.txt
+1000 738
+
+cat ../check/opdracht5/t2.txt | ./dups 6 6400 989 1679 1 891 7891 3267 >> ../check/opdracht5/t2_out.txt
+1000 832
+
+cat ../check/opdracht5/t2.txt | ./dups 6 12800 989 1679 1 891 7891 3267 >> ../check/opdracht5/t2_out.txt
+1000 857
+
+cat ../check/opdracht5/t2.txt | ./dups 4 12800 989 1679 1 891 >> ../check/opdracht5/t2_out.txt
+1000 666
+
+cat ../check/opdracht5/t2.txt | ./dups 10 12800 989 1679 1 891 7891 3267 37892 6782 345 178 >> ../check/opdracht5/t2_out.txt
+1000 947

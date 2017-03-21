@@ -1,0 +1,917 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 6 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /A << /S /URI /Type /Action /URI (https://en.wikipedia.org/wiki/Bloom_filter) >> /Border [ 0 0 0 ] /Rect [ 175.5229 545.0236 225.5329 557.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+6 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font >>
+endobj
+7 0 obj
+<< /Annots [ 5 0 R ] /Contents 21 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 20 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+8 0 obj
+<< /A << /S /URI /Type /Action /URI (https://en.wikipedia.org/wiki/Bit_array) >> /Border [ 0 0 0 ] /Rect [ 85.69291 257.8236 250.1929 269.8236 ] /Subtype /Link /Type /Annot >>
+endobj
+9 0 obj
+<< /Annots [ 8 0 R ] /Contents 22 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 20 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+10 0 obj
+<< /Contents 23 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 20 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 /Trans <<  >> 
+  /Type /Page >>
+endobj
+11 0 obj
+<< /Outlines 13 0 R /PageLabels 24 0 R /PageMode /UseNone /Pages 20 0 R /Type /Catalog >>
+endobj
+12 0 obj
+<< /Author () /CreationDate (D:20170314194723-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20170314194723-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Assignment 5: Bloom filters) /Trapped /False >>
+endobj
+13 0 obj
+<< /Count 6 /First 14 0 R /Last 19 0 R /Type /Outlines >>
+endobj
+14 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 689.0236 0 ] /Next 15 0 R /Parent 13 0 R /Title (Objectives) >>
+endobj
+15 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 626.0236 0 ] /Next 16 0 R /Parent 13 0 R /Prev 14 0 R /Title (Requirements) >>
+endobj
+16 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 503.0236 0 ] /Next 17 0 R /Parent 13 0 R /Prev 15 0 R /Title (Program arguments) >>
+endobj
+17 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 374.0236 0 ] /Next 18 0 R /Parent 13 0 R /Prev 16 0 R /Title (Input / output definition) >>
+endobj
+18 0 obj
+<< /Dest [ 9 0 R /XYZ 62.69291 605.8236 0 ] /Next 19 0 R /Parent 13 0 R /Prev 17 0 R /Title (Overall structure of the assignment) >>
+endobj
+19 0 obj
+<< /Dest [ 9 0 R /XYZ 62.69291 218.8236 0 ] /Parent 13 0 R /Prev 18 0 R /Title (Grading) >>
+endobj
+20 0 obj
+<< /Count 3 /Kids [ 7 0 R 9 0 R 10 0 R ] /Type /Pages >>
+endobj
+21 0 obj
+<< /Length 6226 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 102.1449 0 Td (Assignment 5: Bloom filters) Tj T* -102.1449 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 716.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (13-03-2017) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 701.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 28.02937 0 Td (Deadline:) Tj T* -28.02937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (22-03-2017 23:59) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 668.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Objectives) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 638.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .830514 Tw (You must implement a hash function API, an array API and a program that uses a bloom filter to detect) Tj T* 0 Tw (duplicates in its input.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 605.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Requirements) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 563.0236 cm
+q
+BT 1 0 0 1 0 26 Tm 1.496098 Tw 12 TL /F1 10 Tf 0 0 0 rg (You must write a program ) Tj /F3 10 Tf 0 0 0 rg (dups ) Tj /F1 10 Tf 0 0 0 rg (which can process a very large number of lines on its standard input) Tj T* 0 Tw 1.645318 Tw (\(containing possibly billions of input lines\) and reproduces its input on its standard output without any) Tj T* 0 Tw (duplicates. The program may drop a small fraction of the input which are not duplicates.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 545.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Your solution must use a ) Tj 0 0 .501961 rg (Bloom filter ) Tj 0 0 0 rg (to detect duplicate items.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 515.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .142846 Tw 12 TL /F1 10 Tf 0 0 0 rg (The new aspect in this assignment is that there is not one single good answer: a part of your grade will be) Tj T* 0 Tw (proportional to "how well" your program is able to reproduce the original input without duplicates.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 482.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Program arguments) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 464.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Your program must accept multiple positional arguments on the command line:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 458.0236 cm
+Q
+q
+1 0 0 1 62.69291 458.0236 cm
+Q
+q
+1 0 0 1 62.69291 446.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (k) Tj /F1 10 Tf (, the number of hash functions to use;) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 440.0236 cm
+Q
+q
+1 0 0 1 62.69291 428.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (n) Tj /F1 10 Tf (, the size of the bloom filter.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 422.0236 cm
+Q
+q
+1 0 0 1 62.69291 386.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm .092765 Tw 12 TL /F3 10 Tf 0 0 0 rg (ks) Tj /F1 10 Tf (, a set of ) Tj /F3 10 Tf 0 0 0 rg (k ) Tj /F1 10 Tf 0 0 0 rg (parameters to be passed to initialize the ) Tj /F3 10 Tf 0 0 0 rg (k ) Tj /F1 10 Tf 0 0 0 rg (different hash functions. Each parameter can) Tj T* 0 Tw .523516 Tw (be a single value or a combination of multiple arguments of different types, separated in a format of) Tj T* 0 Tw (your choosing.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 386.0236 cm
+Q
+q
+1 0 0 1 62.69291 353.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Input / output definition) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 299.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL .947882 Tw (The input items will be provided as zero or more separate lines of text on the standard input. The input) Tj T* 0 Tw .130514 Tw (can be arbitrarily large: you cannot assume a maximum number of lines in the input. Each line of input will) Tj T* 0 Tw .074987 Tw (contain only printable characters, in particular there will be no nul character in the input, and will contain at) Tj T* 0 Tw (most 1024 characters.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 257.0236 cm
+q
+BT 1 0 0 1 0 26 Tm .321098 Tw 12 TL /F1 10 Tf 0 0 0 rg (Your program must print out the ) Tj /F3 10 Tf (unique ) Tj /F1 10 Tf (input items as-is on its standard output, as soon as possible after) Tj T* 0 Tw .036179 Tw (they are read. A unique input item is an item ) Tj /F3 10 Tf (that has a low probability to have been read before ) Tj /F1 10 Tf (\(since the) Tj T* 0 Tw (program started\). For example in the following input:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 187.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 60 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F4 10 Tf 12 TL (hello) Tj T* (world) Tj T* (hello) Tj T* (jane) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 167.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (There are 3 unique input items, and the corresponding expected output is:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 110.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 48 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F4 10 Tf 12 TL (hello) Tj T* (world) Tj T* (jane) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 78.62362 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .142765 Tw (Because when "hello" is encountered the 2nd time, it was seen before with a high probability \(in this case,) Tj T* 0 Tw (the probability is 1\), so it is skipped.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+22 0 obj
+<< /Length 9041 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 753.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (When there are no more input lines available to read \(if that ever happens\), Your program must then:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 747.0236 cm
+Q
+q
+1 0 0 1 62.69291 747.0236 cm
+Q
+q
+1 0 0 1 62.69291 723.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (1.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .864431 Tw 12 TL /F1 10 Tf 0 0 0 rg (print a last line containing the number of input items read so far and, separated by a single space,) Tj T* 0 Tw (the number of output lines produced so far. This line should be printed to ) Tj /F3 10 Tf 0 0 0 rg (stderr) Tj /F1 10 Tf 0 0 0 rg (;) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+Q
+q
+1 0 0 1 62.69291 705.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (2.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (terminate with exit code ) Tj /F3 10 Tf 0 0 0 rg (EXIT_SUCCESS) Tj /F1 10 Tf 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 705.0236 cm
+Q
+q
+1 0 0 1 62.69291 687.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (For example with the input above the complete output would be:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 617.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 60 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F4 10 Tf 12 TL (hello) Tj T* (world) Tj T* (jane) Tj T* (4 3) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 584.8236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Overall structure of the assignment) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 572.8236 cm
+Q
+q
+1 0 0 1 62.69291 572.8236 cm
+Q
+q
+1 0 0 1 62.69291 548.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (1.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 2.108735 Tw 12 TL /F1 10 Tf 0 0 0 rg (Implement a first version of the array API defined in ) Tj /F4 10 Tf 0 0 0 rg (bitvec.h) Tj /F1 10 Tf 0 0 0 rg (. Your first version can be very) Tj T* 0 Tw (simple, and use standard C arrays. This would be a correct implementation.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 542.8236 cm
+Q
+q
+1 0 0 1 62.69291 494.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (2.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 38 Tm .399986 Tw 12 TL /F1 10 Tf 0 0 0 rg (Implement the hash function API defined in ) Tj /F4 10 Tf 0 0 0 rg (hash.h) Tj /F1 10 Tf 0 0 0 rg (, which requires you to define a ) Tj /F3 10 Tf (family ) Tj /F1 10 Tf (of k hash) Tj T* 0 Tw .806988 Tw (functions \(from 0 to k-1\). The quality of the Bloom filter you will use in step 3 is dependent on how) Tj T* 0 Tw .557485 Tw (different the k functions are from each other. ) Tj /F3 10 Tf (Note: Hash functions and Bloom filters will be covered) Tj T* 0 Tw (in lecture on Thursday.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 494.8236 cm
+Q
+q
+1 0 0 1 62.69291 488.8236 cm
+Q
+q
+1 0 0 1 62.69291 488.8236 cm
+Q
+q
+1 0 0 1 62.69291 428.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (3.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 50 Tm 1.182485 Tw 12 TL /F1 10 Tf 0 0 0 rg (Implement a Bloom filter based on your array and hash function API from the previous two steps.) Tj T* 0 Tw .49528 Tw (You may build the Bloom filter directly into ) Tj /F4 10 Tf 0 0 0 rg (main.c ) Tj /F1 10 Tf 0 0 0 rg (or create a separate file ) Tj /F4 10 Tf 0 0 0 rg (bloom.c ) Tj /F1 10 Tf 0 0 0 rg (with its own) Tj T* 0 Tw 1.08186 Tw (header API ) Tj /F4 10 Tf 0 0 0 rg (bloom.h ) Tj /F1 10 Tf 0 0 0 rg (\(+0.5pt for separate files\). ) Tj /F3 10 Tf (Be sure to add all additional files to the Makefile) Tj T* 0 Tw .371984 Tw (under all the relevant targets, including the bloom_submit.tar.gz target so the files will be included in) Tj T* 0 Tw (your tarball.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 422.8236 cm
+Q
+q
+1 0 0 1 62.69291 398.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (4.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.229983 Tw 12 TL /F1 10 Tf 0 0 0 rg (Implement the ) Tj /F3 10 Tf 0 0 0 rg (dups ) Tj /F1 10 Tf 0 0 0 rg (program to read the input from standard input and detect potential duplicates) Tj T* 0 Tw (using your Bloom filter, printing the non-duplicate entries to standard output.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 392.8236 cm
+Q
+q
+1 0 0 1 62.69291 344.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (5.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 38 Tm .521235 Tw 12 TL /F1 10 Tf 0 0 0 rg (Find good values for the ) Tj /F3 10 Tf 0 0 0 rg (ks ) Tj /F1 10 Tf 0 0 0 rg (parameter of your ) Tj /F3 10 Tf 0 0 0 rg (dups ) Tj /F1 10 Tf 0 0 0 rg (program and store these, separated by spaces,) Tj T* 0 Tw .871098 Tw (in the file called ) Tj /F4 10 Tf 0 0 0 rg (PARAMS) Tj /F1 10 Tf 0 0 0 rg (. Please note that you are free to determine the format \(and even type\) of) Tj T* 0 Tw .542651 Tw (these parameters. This does require you edit the behaviour of the ) Tj /F4 10 Tf 0 0 0 rg (init_ks ) Tj /F1 10 Tf 0 0 0 rg (function to match your) Tj T* 0 Tw (format. You should document this, if you do so.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 338.8236 cm
+Q
+q
+1 0 0 1 62.69291 314.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (6.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .586654 Tw (Iterate on step 2 \(hash functions\) and 5 to see if you can decrease your false positive rate \(number) Tj T* 0 Tw (of items your algorithm incorrectly decides are duplicates\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 308.8236 cm
+Q
+q
+1 0 0 1 62.69291 260.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 5.66 0 Td (7.) Tj T* -5.66 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 38 Tm .514597 Tw 12 TL /F1 10 Tf 0 0 0 rg (\(Optionally\) Improve your implementation of the array API, taking advantage of your knowledge that) Tj T* 0 Tw 1.07881 Tw (there are only two possible values at each position. Please note that you should try to assume as) Tj T* 0 Tw 12.27498 Tw (little as possible about the machine on which the code is used. Hint:) Tj T* 0 Tw 0 0 .501961 rg (https://en.wikipedia.org/wiki/Bit_array) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 260.8236 cm
+Q
+q
+1 0 0 1 62.69291 230.8236 cm
+q
+BT 1 0 0 1 0 14 Tm .767045 Tw 12 TL /F2 10 Tf 0 0 0 rg (Informatics only: ) Tj /F1 10 Tf (While you are iterating in step 6, keep a journal of your results and your intermediate) Tj T* 0 Tw (implementations to present in your PAV report.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 197.8236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Grading) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 179.8236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Your grade starts from 0, and the following tests determine your grade:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 173.8236 cm
+Q
+q
+1 0 0 1 62.69291 173.8236 cm
+Q
+q
+1 0 0 1 62.69291 161.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (+0.5pt if you have submitted an archive in the right format with an ) Tj /F4 10 Tf 0 0 0 rg (AUTHORS ) Tj /F1 10 Tf 0 0 0 rg (file.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 155.8236 cm
+Q
+q
+1 0 0 1 62.69291 131.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 2.905697 Tw 12 TL /F1 10 Tf 0 0 0 rg (+0.5pt if your source code builds without errors and you have modified ) Tj /F4 10 Tf 0 0 0 rg (hash.c) Tj /F1 10 Tf 0 0 0 rg (, ) Tj /F4 10 Tf 0 0 0 rg (main.c ) Tj /F1 10 Tf 0 0 0 rg (or) Tj T* 0 Tw /F4 10 Tf 0 0 0 rg (bitvec.c ) Tj /F1 10 Tf 0 0 0 rg (in any way.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 125.8236 cm
+Q
+q
+1 0 0 1 62.69291 113.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (+1pt if your array API works properly.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 107.8236 cm
+Q
+ 
+endstream
+endobj
+23 0 obj
+<< /Length 3369 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 729.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm 1.823735 Tw 12 TL /F1 10 Tf 0 0 0 rg (+2pt if your hash function API works properly, and the k functions return a different value when) Tj T* 0 Tw .555984 Tw (applied to an empty string as input. Additionally, you have provided at least 10 different initialization) Tj T* 0 Tw (parameters in the ) Tj /F4 10 Tf 0 0 0 rg (PARAMS ) Tj /F1 10 Tf 0 0 0 rg (file to test your functions.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 723.0236 cm
+Q
+q
+1 0 0 1 62.69291 711.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (+0.5pt if your Bloom filter is written in a separate files ) Tj /F4 10 Tf 0 0 0 rg (bloom.c ) Tj /F1 10 Tf 0 0 0 rg (and ) Tj /F4 10 Tf 0 0 0 rg (bloom.h) Tj /F1 10 Tf 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 705.0236 cm
+Q
+q
+1 0 0 1 62.69291 645.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 45 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (+2pt if your ) Tj /F3 10 Tf 0 0 0 rg (dups ) Tj /F1 10 Tf 0 0 0 rg (program works minimally:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 39 cm
+Q
+q
+1 0 0 1 23 39 cm
+Q
+q
+1 0 0 1 23 27 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (the program never outputs the same item more than once.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 21 cm
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .727318 Tw 12 TL /F1 10 Tf 0 0 0 rg (given an input that contains ) Tj /F3 10 Tf (n ) Tj /F1 10 Tf (unique items, your program reproduces a non-zero fraction of ) Tj /F3 10 Tf (n) Tj T* 0 Tw /F1 10 Tf (output items, regardless of the value of ) Tj /F3 10 Tf (n) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 639.0236 cm
+Q
+q
+1 0 0 1 62.69291 615.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.906412 Tw (+0-3pt depending on the false positive rate of your implementation \(more output items overall =) Tj T* 0 Tw (better program\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 609.0236 cm
+Q
+q
+1 0 0 1 62.69291 597.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (+1pt if your implementation of the array API is using less than one byte per position overall.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 597.0236 cm
+Q
+ 
+endstream
+endobj
+24 0 obj
+<< /Nums [ 0 25 0 R 1 26 0 R 2 27 0 R ] >>
+endobj
+25 0 obj
+<< /S /D /St 1 >>
+endobj
+26 0 obj
+<< /S /D /St 2 >>
+endobj
+27 0 obj
+<< /S /D /St 3 >>
+endobj
+xref
+0 28
+0000000000 65535 f
+0000000075 00000 n
+0000000139 00000 n
+0000000249 00000 n
+0000000364 00000 n
+0000000482 00000 n
+0000000679 00000 n
+0000000787 00000 n
+0000001014 00000 n
+0000001208 00000 n
+0000001435 00000 n
+0000001645 00000 n
+0000001754 00000 n
+0000002043 00000 n
+0000002120 00000 n
+0000002234 00000 n
+0000002363 00000 n
+0000002497 00000 n
+0000002639 00000 n
+0000002791 00000 n
+0000002902 00000 n
+0000002978 00000 n
+0000009261 00000 n
+0000018359 00000 n
+0000021785 00000 n
+0000021847 00000 n
+0000021884 00000 n
+0000021921 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(\311\320\227\305\323Yu\232\\\207\361\277\260\)3q) (\311\320\227\305\323Yu\232\\\207\361\277\260\)3q)]
+ /Info 12 0 R /Root 11 0 R /Size 28 >>
+startxref
+21958
+%%EOF
