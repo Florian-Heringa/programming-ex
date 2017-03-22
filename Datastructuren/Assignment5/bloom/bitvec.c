@@ -1,6 +1,14 @@
 /* Florian Heringa
  * 10385835
  * bitvec.c
+ *
+ * Bitvec API for use in a bloom filter, bitvector is implemented as
+ * an array of 32-bit integers whose individual bits can be set or reset.
+ * This potentially reduces space complexity by a maximum factor of about 
+ * 32. Changing the value from 32 to 64 changes the integer size used from
+ * 32 to 64 potentially reduscing the space complexity even more on 64-bit
+ * machines. This does however need significant modification within the
+ * type of hash functions used and has not been considered any further.
  */
 
 #include <stdlib.h>
@@ -9,6 +17,13 @@
 #include "bitvec.h"
 
 #define INT_SIZE 32
+
+#if INT_SIZE == 32
+ #define INT32
+#elif INT_SIZE == 64
+ #define INT64
+#endif
+ 
 
 /* The vec struct has two fields, one with the overall size of the array
  * (the amount of bits available) and the other with an array of 32-bit
@@ -19,7 +34,12 @@
  */
 struct vec {
 	size_t size;
+	#ifdef INT32
     int32_t *vec_ar;
+    #endif
+    #ifdef INT64
+    int64_t *vec_ar;
+    #endif
 };
 
 /* Allocate an array of n bits where the bits are contained within 32-bit 
@@ -34,11 +54,20 @@ struct vec *bitvec_alloc(size_t n) {
     	return NULL;
     }
 
+    #ifdef INT32
     // Calloc ensures that all bits are set to 0
     if (!(v->vec_ar = calloc(num_elems, sizeof(int32_t)))) {	
     	free(v);
     	return NULL;
     }
+    #endif
+    #ifdef INT64
+    // Calloc ensures that all bits are set to 0
+    if (!(v->vec_ar = calloc(num_elems, sizeof(int64_t)))) {	
+    	free(v);
+    	return NULL;
+    }
+    #endif
 
     v->size = n;
 
@@ -64,7 +93,12 @@ int bitvec_get(struct vec *vec, size_t i, bit *val) {
 	// Create mask
     int index = i / INT_SIZE;
     int get_bit = i % INT_SIZE;
+    #ifdef INT32
     int32_t mask = 1 << get_bit;
+    #endif
+    #ifdef INT64
+    int64_t mask = 1 << get_bit;
+    #endif
 
     // Apply mask and store at location 'val'
     *val = (vec->vec_ar[index] & mask) >> get_bit;
@@ -81,7 +115,12 @@ int bitvec_set(struct vec *vec, size_t i, bit v) {
 	// Setup mask
     int index = i / INT_SIZE;
     int set_bit = i % INT_SIZE;
+    #ifdef INT32
     int32_t mask = 1 << set_bit;
+    #endif
+    #ifdef INT64
+    int64_t mask = 1 << set_bit;
+    #endif
 
     /* Possibility of setting a bit to 0 or 1, not used in
      * current implementation but might be useful for resetting
