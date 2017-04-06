@@ -88,7 +88,11 @@ int main(int argc, char *argv[]) {
         return EXIT_FAILURE;
     }
 
-    struct bloom *bloom_filter = init_bloom(n, k, ks);
+    struct bloom *bloom_filter;
+
+    if (!(bloom_filter = init_bloom(n, k, ks))) {
+        return EXIT_FAILURE;
+    }
 
     size_t read = 0;
     size_t printed = 0;
@@ -108,8 +112,10 @@ int main(int argc, char *argv[]) {
         // Remove trailing newline and find length of new string
         s = strtok(s, "\n");
 
-        // Ignore empty lines after removing trailing newline
-        if (!s) { continue; }
+        /* Strtok returns null pointer if line only contained a newline
+         * character this resets the string to an empty one if that happens
+         */
+        if (!s) { s = ""; }
         len = strlen(s);
 
         // Check if the word is in the filter
@@ -127,7 +133,6 @@ int main(int argc, char *argv[]) {
     }
 
     for (size_t i = 0; i < k; i++) {
-        printf("%ld\n", *(long*)ks[i]);
         free(ks[i]);
     }
     free(ks);

@@ -73,7 +73,9 @@ size_t hash(struct hashfunc *f, const size_t f_index, const size_t len,
 	char c_now;
 	
 	/* Hash algorithm is djb2 base with an additional mixing step dedendent on
-	 * consecutive characters in the input string and variable shift value. */
+	 * consecutive characters in the input string and variable shift value. 
+	 * Source: http://www.cse.yorku.ca/~oz/hash.html
+	 */
 	for (size_t i = 0; i < len; ++i) {
 		c_now = value[i];
 		hash = ((hash << shift) + hash) + c_now; /* hash * (shift + 1) + c */

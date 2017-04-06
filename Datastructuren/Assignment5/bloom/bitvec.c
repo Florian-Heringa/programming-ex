@@ -13,61 +13,37 @@
 
 #include <stdlib.h>
 #include <stdint.h>
+#include <limits.h>
 
 #include "bitvec.h"
 
-#define INT_SIZE 32
-
-#if INT_SIZE == 32
- #define INT32
-#elif INT_SIZE == 64
- #define INT64
-#endif
- 
-
 /* The vec struct has two fields, one with the overall size of the array
- * (the amount of bits available) and the other with an array of 32-bit
- * integers. The only assumption in this implementation is that the machine
- * is capable of using 32-bit integers. In every integer there is a 
- * possibility of 32 bits that can be set using masking. This is explained 
- * in the respective functions
+ * (the amount of bits available) and the other with an array of chars.
+ * In the code is used that the size of a char is always known through
+ * the macro CHAR_BIT, which holds the size of a character in bits.
  */
 struct vec {
 	size_t size;
-	#ifdef INT32
-    int32_t *vec_ar;
-    #endif
-    #ifdef INT64
-    int64_t *vec_ar;
-    #endif
+    unsigned char *vec_ar;
 };
 
-/* Allocate an array of n bits where the bits are contained within 32-bit 
- * integers. This means that the array has (n / 32) + 1 elements.
+/* Allocate an array of n bits where the bits are contained within chars
+ * of size CHAR_BIT.
  */
 struct vec *bitvec_alloc(size_t n) {
 
-	size_t num_elems = (n/INT_SIZE) + 1;
+	size_t num_elems = (n/CHAR_BIT) + 1;
 
     struct vec *v;
     if (!(v = malloc(sizeof(struct vec)))) {
     	return NULL;
     }
 
-    #ifdef INT32
     // Calloc ensures that all bits are set to 0
-    if (!(v->vec_ar = calloc(num_elems, sizeof(int32_t)))) {	
+    if (!(v->vec_ar = calloc(num_elems, CHAR_BIT))) {	
     	free(v);
     	return NULL;
     }
-    #endif
-    #ifdef INT64
-    // Calloc ensures that all bits are set to 0
-    if (!(v->vec_ar = calloc(num_elems, sizeof(int64_t)))) {	
-    	free(v);
-    	return NULL;
-    }
-    #endif
 
     v->size = n;
 
@@ -80,7 +56,7 @@ void bitvec_free(struct vec *vec) {
 }
 
 /* As long as the asked index is not outside of the array, a mask is
- * created for bit i % INT_SIZE at index i / INT_SIZE into the bitvec
+ * created for bit i % CHAR_BIT at index i / CHAR_BIT into the bitvec
  * array of integers. Through application of the mask the correct bit
  * can be extracted.
  */
@@ -91,14 +67,9 @@ int bitvec_get(struct vec *vec, size_t i, bit *val) {
 	}
 
 	// Create mask
-    int index = i / INT_SIZE;
-    int get_bit = i % INT_SIZE;
-    #ifdef INT32
-    int32_t mask = 1 << get_bit;
-    #endif
-    #ifdef INT64
-    int64_t mask = 1 << get_bit;
-    #endif
+    int index = i / CHAR_BIT;
+    int get_bit = (i % CHAR_BIT);
+    unsigned char mask = 1 << get_bit;
 
     // Apply mask and store at location 'val'
     *val = (vec->vec_ar[index] & mask) >> get_bit;
@@ -113,14 +84,9 @@ int bitvec_set(struct vec *vec, size_t i, bit v) {
 	}
 
 	// Setup mask
-    int index = i / INT_SIZE;
-    int set_bit = i % INT_SIZE;
-    #ifdef INT32
-    int32_t mask = 1 << set_bit;
-    #endif
-    #ifdef INT64
-    int64_t mask = 1 << set_bit;
-    #endif
+    int index = i / CHAR_BIT;
+    int set_bit = (i % CHAR_BIT);
+    unsigned char mask = 1 << set_bit;
 
     /* Possibility of setting a bit to 0 or 1, not used in
      * current implementation but might be useful for resetting

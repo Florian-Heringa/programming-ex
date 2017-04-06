@@ -1,0 +1,553 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 6 0 R /F6 7 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font >>
+endobj
+6 0 obj
+<< /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font >>
+endobj
+7 0 obj
+<< /BaseFont /Courier-Oblique /Encoding /WinAnsiEncoding /Name /F6 /Subtype /Type1 /Type /Font >>
+endobj
+8 0 obj
+<< /A << /S /URI /Type /Action /URI (https://gitlab-fnwi.uva.nl/) >> /Border [ 0 0 0 ] /Rect [ 250.7529 102.4236 358.0229 114.4236 ] /Subtype /Link /Type /Annot >>
+endobj
+9 0 obj
+<< /Annots [ 8 0 R ] /Contents 16 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 15 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+10 0 obj
+<< /Outlines 12 0 R /PageLabels 17 0 R /PageMode /UseNone /Pages 15 0 R /Type /Catalog >>
+endobj
+11 0 obj
+<< /Author () /CreationDate (D:20170404131051-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20170404131051-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (42sh: mini-shell) /Trapped /False >>
+endobj
+12 0 obj
+<< /Count 2 /First 13 0 R /Last 14 0 R /Type /Outlines >>
+endobj
+13 0 obj
+<< /Dest [ 9 0 R /XYZ 62.69291 699.0236 0 ] /Next 14 0 R /Parent 12 0 R /Title (Over de shell zelf) >>
+endobj
+14 0 obj
+<< /Dest [ 9 0 R /XYZ 62.69291 204.4236 0 ] /Parent 12 0 R /Prev 13 0 R /Title (Over de omgeving) >>
+endobj
+15 0 obj
+<< /Count 1 /Kids [ 9 0 R ] /Type /Pages >>
+endobj
+16 0 obj
+<< /Length 11786 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 159.3649 0 Td (42sh: mini-shell) Tj T* -159.3649 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 711.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 15 Tf 18 TL 141.1649 0 Td (Extra tips en aanwijzingen) Tj T* -141.1649 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 678.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Over de shell zelf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 666.0236 cm
+Q
+q
+1 0 0 1 62.69291 666.0236 cm
+Q
+q
+1 0 0 1 62.69291 618.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 33 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (je shell hoeft ) Tj /F3 10 Tf (niet ) Tj /F1 10 Tf (de volgende features implementeren:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 15 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (bestandnamen automatisch invullen als de characters \223) Tj /F4 10 Tf 0 0 0 rg (*) Tj /F1 10 Tf 0 0 0 rg (\224 of \223) Tj /F4 10 Tf 0 0 0 rg (?) Tj /F1 10 Tf 0 0 0 rg (\224 worden gebruikt;) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 -3 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (de thuismap van de gebruiker invullen als de character \223) Tj /F4 10 Tf 0 0 0 rg (~) Tj /F1 10 Tf 0 0 0 rg (\224 wordt gebruikt.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 612.0236 cm
+Q
+q
+1 0 0 1 62.69291 482.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 114.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 102.2 cm
+q
+BT 1 0 0 1 0 14 Tm 1.44686 Tw 12 TL /F1 10 Tf 0 0 0 rg (als je niet precies weet waar je moet beginnen, focus dan eerst op \223simpele\224 commando's. Dit is) Tj T* 0 Tw (knoptype \223) Tj /F4 10 Tf 0 0 0 rg (COMMAND) Tj /F1 10 Tf 0 0 0 rg (\224. Dus in ) Tj /F4 10 Tf 0 0 0 rg (shell.c) Tj /F1 10 Tf 0 0 0 rg (, ) Tj /F4 10 Tf 0 0 0 rg (run_command) Tj /F1 10 Tf 0 0 0 rg (:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 445.6898 96 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 72 12 12 re f*
+.960784 .960784 .862745 rg
+n 18 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 24 72 24 12 re f*
+.960784 .960784 .862745 rg
+n 48 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 54 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 72 24 12 re f*
+.960784 .960784 .862745 rg
+n 90 72 12 12 re f*
+.960784 .960784 .862745 rg
+n 108 72 72 12 re f*
+.960784 .960784 .862745 rg
+n 180 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 0 60 6 12 re f*
+.960784 .960784 .862745 rg
+n 24 48 24 12 re f*
+.960784 .960784 .862745 rg
+n 54 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 48 42 12 re f*
+.960784 .960784 .862745 rg
+n 108 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 120 48 24 12 re f*
+.960784 .960784 .862745 rg
+n 144 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 150 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 156 48 42 12 re f*
+.960784 .960784 .862745 rg
+n 198 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 204 48 42 12 re f*
+.960784 .960784 .862745 rg
+n 246 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 24 36 24 12 re f*
+.960784 .960784 .862745 rg
+n 54 36 12 12 re f*
+.960784 .960784 .862745 rg
+n 66 36 24 12 re f*
+.960784 .960784 .862745 rg
+n 96 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 108 36 24 12 re f*
+.960784 .960784 .862745 rg
+n 132 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 138 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 144 36 42 12 re f*
+.960784 .960784 .862745 rg
+n 186 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 192 36 24 12 re f*
+.960784 .960784 .862745 rg
+n 216 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 24 24 264 12 re f*
+.960784 .960784 .862745 rg
+n 24 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 6 12 re f*
+BT 1 0 0 1 0 74 Tm 12 TL /F5 10 Tf 0 .501961 0 rg (if) Tj /F4 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (\() Tj 0 0 0 rg (node) Tj .4 .4 .4 rg (-) Tj (>) Tj 0 0 0 rg (type) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (==) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (NODE_COMMAND) Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* 0 0 0 rg ({) Tj 0 0 0 rg  T* (    ) Tj .690196 0 .25098 rg (char) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (*) Tj 0 0 0 rg (program) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (node) Tj .4 .4 .4 rg (-) Tj (>) Tj 0 0 0 rg (command) Tj 0 0 0 rg (.) Tj 0 0 0 rg (program) Tj 0 0 0 rg (;) Tj 0 0 0 rg  T* (    ) Tj .690196 0 .25098 rg (char) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (**) Tj 0 0 0 rg (argv) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (node) Tj .4 .4 .4 rg (-) Tj (>) Tj 0 0 0 rg (command) Tj 0 0 0 rg (.) Tj 0 0 0 rg (argv) Tj 0 0 0 rg (;) Tj 0 0 0 rg  T* (    ) Tj /F6 10 Tf .25098 .501961 .501961 rg (// hier een goede combinatie van fork + exec) Tj T* /F4 10 Tf 0 0 0 rg (    ) Tj 0 0 0 rg (...) Tj 0 0 0 rg  T* 0 0 0 rg (}) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 476.8236 cm
+Q
+q
+1 0 0 1 62.69291 440.8236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm 1.29748 Tw 12 TL /F1 10 Tf 0 0 0 rg (een \223gewone\224 POSIX shell ondersteunt redirecties op alle plekken in een eenvoudige commando:) Tj T* 0 Tw .369984 Tw (\223) Tj /F4 10 Tf 0 0 0 rg (ls) Tj ( ) Tj (>) Tj (foo) Tj /F1 10 Tf 0 0 0 rg (\224 en \223) Tj /F4 10 Tf 0 0 0 rg (>) Tj (foo) Tj ( ) Tj (ls) Tj /F1 10 Tf 0 0 0 rg (\224 zijn equivalent. ) Tj /F2 10 Tf (Het gegeven voorbeeld code kent alleen de 2de vorm:) Tj T* 0 Tw /F1 10 Tf (\223) Tj /F4 10 Tf 0 0 0 rg (>) Tj (foo) Tj ( ) Tj (ls) Tj /F1 10 Tf 0 0 0 rg (\224) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 434.8236 cm
+Q
+q
+1 0 0 1 62.69291 329.6236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 90.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 78.2 cm
+q
+BT 1 0 0 1 0 14 Tm .137674 Tw 12 TL /F2 10 Tf 0 0 0 rg (in een \223pipe\224 constructie moeten alle onderdelen ge``fork``t worden) Tj /F1 10 Tf (, zelfs als ze alleen \223built-in\224) Tj T* 0 Tw (commando's bevatten. Dit houdt de implementatie eenvoudiger. Bijvoorbeeld:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 445.6898 72 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 48 24 12 re f*
+.960784 .960784 .862745 rg
+n 30 48 12 12 re f*
+.960784 .960784 .862745 rg
+n 48 48 108 12 re f*
+.960784 .960784 .862745 rg
+n 0 36 24 12 re f*
+.960784 .960784 .862745 rg
+n 30 36 12 12 re f*
+.960784 .960784 .862745 rg
+n 48 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 114 36 276 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 12 12 re f*
+.960784 .960784 .862745 rg
+n 48 12 156 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 48 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 114 0 300 12 re f*
+BT 1 0 0 1 0 50 Tm 12 TL /F4 10 Tf 0 .501961 0 rg (exit) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (42) Tj 0 0 0 rg ( ) Tj /F6 10 Tf .25098 .501961 .501961 rg (# eindigt de shell) Tj T* /F4 10 Tf 0 .501961 0 rg (exit) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (42) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (|) Tj 0 0 0 rg ( sleep ) Tj .4 .4 .4 rg (1) Tj 0 0 0 rg (  ) Tj /F6 10 Tf .25098 .501961 .501961 rg (# exit in sub-shell, hoofdshell blijft draaien) Tj T* /F4 10 Tf 0 0 0 rg  T* 0 .501961 0 rg (cd) Tj 0 0 0 rg ( /tmp ) Tj /F6 10 Tf .25098 .501961 .501961 rg (# verandert de huidige map) Tj T* /F4 10 Tf 0 .501961 0 rg (cd) Tj 0 0 0 rg ( /tmp ) Tj 0 0 0 rg (|) Tj 0 0 0 rg ( sleep ) Tj .4 .4 .4 rg (1) Tj 0 0 0 rg (  ) Tj /F6 10 Tf .25098 .501961 .501961 rg (# cd in sub-shell, hoofdshell blijft in zelfde map) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 323.6236 cm
+Q
+q
+1 0 0 1 62.69291 216.4236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 92.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 68.2 cm
+q
+BT 1 0 0 1 0 26 Tm 1.064651 Tw 12 TL /F4 10 Tf 0 0 0 rg (valgrind ) Tj /F1 10 Tf 0 0 0 rg (zegt \223still reachable: NNN in NNN blocks\224. Het lijkt erop dat de basiscode al geheugen) Tj T* 0 Tw 2.136136 Tw (lekt. We maken echter een onderscheid tussen geheugen gelekt door jullie code, en geheugen) Tj T* 0 Tw (gelekt door de onze. Om zelf dit te onderscheiden, draai ) Tj /F4 10 Tf 0 0 0 rg (valgrind ) Tj /F1 10 Tf 0 0 0 rg (dan met:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 35 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 445.6898 24 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL (valgrind --leak-check=full --show-reachable=yes ...) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 5.198538 Tw 12 TL /F1 10 Tf 0 0 0 rg (Alles gelekt door ) Tj /F4 10 Tf 0 0 0 rg (rl_initialize) Tj /F1 10 Tf 0 0 0 rg (, ) Tj /F4 10 Tf 0 0 0 rg (read_history) Tj /F1 10 Tf 0 0 0 rg (, ) Tj /F4 10 Tf 0 0 0 rg (history_search) Tj /F1 10 Tf 0 0 0 rg (, ) Tj /F4 10 Tf 0 0 0 rg (add_history ) Tj /F1 10 Tf 0 0 0 rg (en) Tj T* 0 Tw /F4 10 Tf 0 0 0 rg (reset_text ) Tj /F1 10 Tf 0 0 0 rg (is buiten jullie controle en wordt dus niet beoordeeld als fout.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 216.4236 cm
+Q
+q
+1 0 0 1 62.69291 183.4236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Over de omgeving) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 171.4236 cm
+Q
+q
+1 0 0 1 62.69291 171.4236 cm
+Q
+q
+1 0 0 1 62.69291 159.4236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (indien geen ) Tj /F4 10 Tf 0 0 0 rg (clang ) Tj /F1 10 Tf 0 0 0 rg (aanwezig is op het systeem: ) Tj /F4 10 Tf 0 0 0 rg (make) Tj ( ) Tj (CC=gcc) Tj ( ) Tj (...) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 153.4236 cm
+Q
+q
+1 0 0 1 62.69291 141.4236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (indien OSX: ) Tj /F4 10 Tf 0 0 0 rg (make) Tj ( ) Tj (LIBS=-lreadline) Tj ( ) Tj (...) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 135.4236 cm
+Q
+q
+1 0 0 1 62.69291 123.4236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (indien OSX: ) Tj /F4 10 Tf 0 0 0 rg (valgrind) Tj ( ) Tj (--dsymutil=yes) Tj ( ) Tj (...) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 117.4236 cm
+Q
+q
+1 0 0 1 62.69291 105.4236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (eigen priv\351 Git repository bij de UvA: ) Tj 0 0 .501961 rg (https://gitlab-fnwi.uva.nl/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 105.4236 cm
+Q
+ 
+endstream
+endobj
+17 0 obj
+<< /Nums [ 0 18 0 R ] >>
+endobj
+18 0 obj
+<< /S /D /St 1 >>
+endobj
+xref
+0 19
+0000000000 65535 f
+0000000075 00000 n
+0000000159 00000 n
+0000000269 00000 n
+0000000384 00000 n
+0000000502 00000 n
+0000000610 00000 n
+0000000723 00000 n
+0000000839 00000 n
+0000001021 00000 n
+0000001248 00000 n
+0000001357 00000 n
+0000001635 00000 n
+0000001712 00000 n
+0000001834 00000 n
+0000001954 00000 n
+0000002017 00000 n
+0000013861 00000 n
+0000013905 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(\210x\000\333\3150\241\243y\3733&\320\346\313q) (\210x\000\333\3150\241\243y\3733&\320\346\313q)]
+ /Info 11 0 R /Root 10 0 R /Size 19 >>
+startxref
+13942
+%%EOF
